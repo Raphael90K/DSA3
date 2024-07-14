@@ -74,7 +74,7 @@ public class NetworkNode extends Node {
                 System.out.printf("Node %s Firework received from %s\n", this.NodeName(), m.queryHeader("sender"));
                 this.isActive = true;
             }
-
+            sleep(100);
         }
     }
 }

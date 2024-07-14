@@ -15,7 +15,7 @@ public class MainA2 {
         LinkedList<String> nodeNames = new LinkedList<>();
         for (int i = 0; i < nNodes; i++) {
             NetworkNode node = new NetworkNode(i);
-            nodeNames.add("Node"+i);
+            nodeNames.add("Node" + i);
             nodes.add(node);
         }
         for (Node node : nodes) {
@@ -23,7 +23,6 @@ public class MainA2 {
         }
         simulator.simulate(5);
         simulator.shutdown();
-
     }
 
 }
