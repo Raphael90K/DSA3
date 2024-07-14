@@ -9,12 +9,23 @@ import java.util.List;
 
 public class ObserverNode extends Node {
 
+    static ObserverNode observerNode = null;
+
     private final HashMap<String, Boolean> connections = new HashMap<>();
     int activeNodes = 0;
 
-    public ObserverNode() {
+    private ObserverNode() {
         super("ObserverNode");
         System.out.printf("%s instantiated.\n", this.NodeName());
+    }
+
+    public static ObserverNode getInstance(){
+        if (observerNode == null){
+            observerNode = new ObserverNode();
+            return observerNode;
+        } else {
+            return observerNode;
+        }
     }
 
     public String getNodeName(){

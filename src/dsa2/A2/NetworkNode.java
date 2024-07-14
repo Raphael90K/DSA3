@@ -60,7 +60,7 @@ public class NetworkNode extends Node {
     }
 
     public void initSending() {
-        this.sleep(rng.nextInt() * 1000);
+        this.sleep(rng.nextInt(0, 1000));
         Message message = new Message().addHeader("Firework", 1);
         if (this.actualPosToSend > rng.nextDouble()) {
             addressNodes(message);

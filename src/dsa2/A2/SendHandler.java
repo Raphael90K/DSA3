@@ -12,6 +12,7 @@ public class SendHandler extends Thread {
 
     @Override
     public void run() {
+        node.initSending();
         while (!Thread.interrupted()) {
             node.sendMessages();
         }

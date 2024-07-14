@@ -11,10 +11,10 @@ public class MainA3 {
     public static void main(String[] args) {
 
         Simulator simulator = Simulator.getInstance();
-        int nNodes = 10;
-        LinkedList<Node> nodes = new LinkedList<Node>();
+        int nNodes = 5;
+        LinkedList<Node> nodes = new LinkedList<>();
         LinkedList<String> nodeNames = new LinkedList<>();
-        ObserverNode observerNode = new ObserverNode();
+        ObserverNode observerNode = ObserverNode.getInstance();
         for (int i = 0; i < nNodes; i++) {
             NetworkNode node = new NetworkNode(i);
             node.setObserver(observerNode.getNodeName());
