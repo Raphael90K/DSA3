@@ -35,3 +35,4 @@ bin/
 /test/org/oxoo2a/sim4da/
 /resources/META-INF/
 /resources/logback.xml
+/.idea/
