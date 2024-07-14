@@ -1,7 +1,6 @@
 package dsa2.A1;
 
 import org.oxoo2a.sim4da.Message;
-import org.oxoo2a.sim4da.NetworkConnection;
 import org.oxoo2a.sim4da.Node;
 import org.oxoo2a.sim4da.UnknownNodeException;
 
@@ -41,19 +40,28 @@ public class NetworkNode extends Node {
         this.connections = connections;
     }
 
-    public void sendMessages() throws UnknownNodeException {
+    public void sendMessages() {
         Message message = new Message().addHeader("Firework", 1);
 
-        if (isActive) {
-            if (possibilityToSend > rng.nextDouble()) {
-                for (String connection : connections) {
-                    if (!connection.equals(this.NodeName()) && possibilityToSend > rng.nextDouble()) {
-                        this.send(message, connection);
+        while (!Thread.interrupted()) {
+            if (this.isActive) {
+                if (this.possibilityToSend > rng.nextDouble()) {
+                    for (String connection : connections) {
+                        if (!connection.equals(this.NodeName()) && this.possibilityToSend > rng.nextDouble()) {
+                            try {
+                                this.send(message, connection);
+                            } catch (UnknownNodeException e) {
+                                e.printStackTrace();
+                                Thread.currentThread().interrupt();
+                            }
+                        }
                     }
+                    this.possibilityToSend /= 2;
+                } else {
+                    System.out.printf("Node %s currently deactivated.\n", this.NodeName());
+                    this.isActive = false;
                 }
-                this.possibilityToSend /= 2;
-            } else {
-                this.isActive = false;
+                sleep(1000);
             }
         }
     }
@@ -61,20 +69,20 @@ public class NetworkNode extends Node {
     @Override
     protected void engage() {
         Message m;
+        SendHandler sendHandler = new SendHandler(this, this.NodeName());
+        sendHandler.start();
         while (true) {
-            try{
-                this.sendMessages();
-            } catch (UnknownNodeException e) {
-                e.printStackTrace();
-            }
             m = this.receive();
             if (this.netHasObserver && m.getHeader().containsKey("status")) {
                 this.sendBlindly(new Message().addHeader("status", this.isActive ? 1 : 0), this.observerName);
             } else if (m.getHeader().containsKey("Firework")) {
                 System.out.printf("Node %s Firework received from %s\n", this.NodeName(), m.queryHeader("sender"));
-                this.isActive = true;
+                if (this.isActive) {
+                    this.isActive = true;
+                    System.out.printf("Node %s activated again.\n", this.NodeName());
+                }
+
             }
-            sleep(100);
         }
     }
 }
