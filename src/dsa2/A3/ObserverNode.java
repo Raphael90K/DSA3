@@ -33,7 +33,7 @@ public class ObserverNode extends Node {
         if (m.getHeader().containsKey("status")) {
             String sender = m.queryHeader("sender");
             Boolean status = Boolean.parseBoolean(m.queryHeader("status"));
-            System.out.printf("Status %b received from Node %s\n", this.NodeName(), m.queryHeader("sender"));
+            System.out.printf("Status %b received from Node %s\n", status, m.queryHeader("sender"));
             this.activeNodes += status ? 1 : -1;
             this.connections.put(sender, status);
         }
