@@ -12,11 +12,9 @@ public class NetworkNode extends Node {
 
     static Random rng = new Random(0);
 
-
-    private double initialPosToSend;
-    private AtomicBoolean isActive = new AtomicBoolean(true);
+    private final double initialPosToSend;
+    private final AtomicBoolean isActive = new AtomicBoolean(true);
     private List<String> connections;
-    private final boolean netHasObserver;
     private String observerName = "";
     private double actualPosToSend;
 
@@ -25,7 +23,6 @@ public class NetworkNode extends Node {
         this.initialPosToSend = rng.nextDouble();
         this.actualPosToSend = this.initialPosToSend;
         this.isActive.set(true);
-        this.netHasObserver = false;
         System.out.printf("%s with rnd %.2f instantiated.\n", this.NodeName(), initialPosToSend);
     }
 
@@ -37,8 +34,9 @@ public class NetworkNode extends Node {
         this.connections = connections;
     }
 
-    private void activte() {
+    private void activate() {
         this.isActive.set(true);
+        this.actualPosToSend = this.initialPosToSend;
         this.sendBlindly(new Message().addHeader("status", "true"), this.observerName);
         System.out.printf("Node %s activated again.\n", this.NodeName());
     }
@@ -64,21 +62,22 @@ public class NetworkNode extends Node {
     public void initSending() {
         this.sleep(rng.nextInt() * 1000);
         Message message = new Message().addHeader("Firework", 1);
-        if (this.initialPosToSend > rng.nextDouble()) {
+        if (this.actualPosToSend > rng.nextDouble()) {
             addressNodes(message);
         }
+        this.deactivate();
     }
 
     public void sendMessages() {
         Message message = new Message().addHeader("Firework", 1);
         if (this.isActive.get()) {
-            if (this.initialPosToSend > rng.nextDouble()) {
+            if (this.actualPosToSend > rng.nextDouble()) {
                 this.addressNodes(message);
-                this.initialPosToSend /= 2;
+                this.actualPosToSend /= 2;
             } else {
                 this.deactivate();
             }
-            sleep(1000);
+            sleep(500);
         }
     }
 
@@ -92,7 +91,7 @@ public class NetworkNode extends Node {
             if (m.getHeader().containsKey("Firework")) {
                 System.out.printf("Node %s Firework received from %s\n", this.NodeName(), m.queryHeader("sender"));
                 if (!this.isActive.get()) {
-                    this.activte();
+                    this.activate();
                 }
             }
         }
