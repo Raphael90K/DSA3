@@ -1,4 +1,4 @@
-package dsa2.A1;
+package dsa2.A2;
 
 public class SendHandler extends Thread {
 
@@ -12,7 +12,9 @@ public class SendHandler extends Thread {
 
     @Override
     public void run() {
-        node.sendMessages();
+        while (!Thread.interrupted()) {
+            node.sendMessages();
+        }
     }
 
 
