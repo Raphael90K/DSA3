@@ -10,8 +10,8 @@ public class MainA2 {
     public static void main(String[] args) {
 
         Simulator simulator = Simulator.getInstance();
-        int nNodes = 100;
-        LinkedList<Node> nodes = new LinkedList<Node>();
+        int nNodes = 5;
+        LinkedList<Node> nodes = new LinkedList<>();
         LinkedList<String> nodeNames = new LinkedList<>();
         for (int i = 0; i < nNodes; i++) {
             NetworkNode node = new NetworkNode(i);
@@ -21,7 +21,7 @@ public class MainA2 {
         for (Node node : nodes) {
             ((NetworkNode) node).setConnections(nodeNames);
         }
-        simulator.simulate(20);
+        simulator.simulate(60);
         simulator.shutdown();
     }
 

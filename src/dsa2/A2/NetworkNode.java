@@ -37,13 +37,11 @@ public class NetworkNode extends Node {
     private void activate() {
         this.isActive.set(true);
         this.actualPosToSend = this.initialPosToSend;
-        this.sendBlindly(new Message().addHeader("status", "true"), this.observerName);
         System.out.printf("Node %s activated again.\n", this.NodeName());
     }
 
     private void deactivate() {
         this.isActive.set(false);
-        this.sendBlindly(new Message().addHeader("status", "false"), this.observerName);
         System.out.printf("Node %s currently deactivated.\n", this.NodeName());
     }
 
@@ -93,6 +91,8 @@ public class NetworkNode extends Node {
                 if (!this.isActive.get()) {
                     this.activate();
                 }
+            } else if (m.getHeader().containsKey("status")) {
+                this.sendBlindly(new Message().addHeader("status", this.isActive.get() ? 1 : 0), this.observerName);
             }
         }
     }

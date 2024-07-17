@@ -1,7 +1,5 @@
 package dsa2.A3;
 
-import dsa2.A2.NetworkNode;
-
 public class ObserverHandler extends Thread {
 
     private final ObserverNode node;
@@ -14,8 +12,17 @@ public class ObserverHandler extends Thread {
 
     @Override
     public void run() {
+        node.resetReceiveCount();
         while (!Thread.interrupted()) {
-            node.checkMessages();
+            try {
+                node.checkIncomingMessages();
+                if (node.getReceiveCount() == node.getConnectionCount()) {
+                    System.out.printf("%d, %d", node.getReceiveCount(), node.getConnectionCount());
+                    break;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
     }
 

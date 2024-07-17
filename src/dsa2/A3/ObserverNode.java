@@ -13,14 +13,17 @@ public class ObserverNode extends Node {
 
     private final HashMap<String, Boolean> connections = new HashMap<>();
     int activeNodes = 0;
+    int sentCount = 0;
+    int receiveCount = 0;
+    int roundsSilentNodes = 0;
 
     private ObserverNode() {
         super("ObserverNode");
         System.out.printf("%s instantiated.\n", this.NodeName());
     }
 
-    public static ObserverNode getInstance(){
-        if (observerNode == null){
+    public static ObserverNode getInstance() {
+        if (observerNode == null) {
             observerNode = new ObserverNode();
             return observerNode;
         } else {
@@ -28,7 +31,7 @@ public class ObserverNode extends Node {
         }
     }
 
-    public String getNodeName(){
+    public String getNodeName() {
         return this.NodeName();
     }
 
@@ -39,18 +42,43 @@ public class ObserverNode extends Node {
         this.activeNodes = connections.size();
     }
 
-    public void checkMessages() {
+    public int getConnectionCount() {
+        return this.connections.keySet().size();
+    }
+
+    public int getReceiveCount() {
+        return this.receiveCount;
+    }
+
+    public void resetReceiveCount() {
+        this.receiveCount = 0;
+    }
+
+    public void sendMessage() {
+        Message m = new Message().addHeader("status", 0);
+        this.sentCount = 0;
+        for (String c : connections.keySet()) {
+            this.sendBlindly(m, c);
+            this.sentCount++;
+        }
+    }
+
+    public void checkIncomingMessages() {
         Message m = this.receive();
         if (m.getHeader().containsKey("status")) {
             String sender = m.queryHeader("sender");
             Boolean status = Boolean.parseBoolean(m.queryHeader("status"));
             System.out.printf("Status %b received from Node %s\n", status, m.queryHeader("sender"));
-            this.activeNodes += status ? 1 : -1;
             this.connections.put(sender, status);
+            System.out.println(status);
+            if (!status){
+                this.receiveCount++;
+            }
+
         }
     }
 
-    private void logTermination(){
+    private void logTermination() {
         Logger logger = this.getLogger();
         logger.debug("Network terminal state reached.");
         System.out.println("Network terminated");
@@ -59,18 +87,25 @@ public class ObserverNode extends Node {
     @Override
     protected void engage() {
         Message m;
-        Thread handleMessages = new ObserverHandler(this);
-        handleMessages.start();
 
         while (true) {
-            if (this.activeNodes == 0) {
-                this.sleep(3000);
-                if (this.activeNodes == 0) {
-                    this.logTermination();
-                    break;
-                }
-            }
+            this.sendMessage();
+            Thread observe = new ObserverHandler(this);
+            observe.start();
             this.sleep(3000);
+            observe.interrupt();
+            if (this.sentCount == this.receiveCount) {
+                this.roundsSilentNodes++;
+            } else {
+                this.roundsSilentNodes = 0;
+            }
+            if (this.roundsSilentNodes >= 2){
+                this.logTermination();
+                break;
+            }
         }
+        System.exit(0);
     }
+
+
 }
