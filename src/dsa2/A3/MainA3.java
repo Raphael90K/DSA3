@@ -14,7 +14,7 @@ public class MainA3 {
         int nNodes = 10;
         LinkedList<Node> nodes = new LinkedList<>();
         LinkedList<String> nodeNames = new LinkedList<>();
-        ObserverNode observerNode = ObserverNode.getInstance();
+        ObserverNode observerNode = ObserverNode.getInstance(2);
         for (int i = 0; i < nNodes; i++) {
             NetworkNode node = new NetworkNode(i);
             node.setObserver(observerNode.getNodeName());

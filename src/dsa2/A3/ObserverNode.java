@@ -23,12 +23,16 @@ public class ObserverNode extends Node {
     // zählt die Runden in denen alle Knoten inaktiv waren.
     private int roundsAllInactive = 0;
 
+    // Anzahl der benötigten Runden die alle Knoten inaktiv sein müssen.
+    private int roundRequired;
+
 
     /**
      * Obersever Knoten, implementiert nach dem Doppelzählverfahren aus der Vorlesung.
      */
-    private ObserverNode() {
+    private ObserverNode(int roundsRequired) {
         super("ObserverNode");
+        this.roundRequired = roundsRequired;
         System.out.printf("#%s#: instantiated.\n", this.NodeName());
     }
 
@@ -37,9 +41,9 @@ public class ObserverNode extends Node {
      *
      * @return
      */
-    public static ObserverNode getInstance() {
+    public static ObserverNode getInstance(int roundsRequired) {
         if (observerNode == null) {
-            observerNode = new ObserverNode();
+            observerNode = new ObserverNode(roundsRequired);
             return observerNode;
         } else {
             return observerNode;
@@ -136,7 +140,7 @@ public class ObserverNode extends Node {
             } else {
                 this.roundsAllInactive = 0;
             }
-            if (this.roundsAllInactive >= 2) {
+            if (this.roundsAllInactive >= this.roundRequired) {
                 this.logTermination();
                 break;
             }
