@@ -130,6 +130,7 @@ public class ObserverNode extends Node {
             observe.start();
             this.sleep(3000);
             observe.interrupt();
+            System.out.printf("#Observer#: %d:%d Knoten inaktiv.", this.receiveInactiveCount, this.sentCount);
             if (this.sentCount == this.receiveInactiveCount) {
                 this.roundsAllInactive++;
             } else {
