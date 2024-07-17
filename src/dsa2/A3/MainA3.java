@@ -25,7 +25,7 @@ public class MainA3 {
             ((NetworkNode) node).setConnections(nodeNames);
         }
         observerNode.setConnections(nodeNames);
-        simulator.simulate(120);
+        simulator.simulate(600);
         simulator.shutdown();
     }
 
