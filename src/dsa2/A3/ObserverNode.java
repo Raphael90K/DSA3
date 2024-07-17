@@ -14,8 +14,9 @@ public class ObserverNode extends Node {
     private final HashMap<String, Boolean> connections = new HashMap<>();
     int activeNodes = 0;
     int sentCount = 0;
-    int receiveCount = 0;
+    int receiveInactiveCount = 0;
     int roundsSilentNodes = 0;
+    private int receiveCount = 0;
 
     private ObserverNode() {
         super("ObserverNode");
@@ -46,12 +47,20 @@ public class ObserverNode extends Node {
         return this.connections.keySet().size();
     }
 
-    public int getReceiveCount() {
+    public int getReceiveCount(){
         return this.receiveCount;
     }
 
     public void resetReceiveCount() {
         this.receiveCount = 0;
+    }
+
+    public int getReceiveInactiveCount() {
+        return this.receiveInactiveCount;
+    }
+
+    public void resetReceiveInactiveCount() {
+        this.receiveInactiveCount = 0;
     }
 
     public void sendMessage() {
@@ -67,14 +76,14 @@ public class ObserverNode extends Node {
         Message m = this.receive();
         if (m.getHeader().containsKey("status")) {
             String sender = m.queryHeader("sender");
-            Boolean status = Boolean.parseBoolean(m.queryHeader("status"));
+            Boolean status = m.queryHeader("status").equals("1");
             System.out.printf("Status %b received from Node %s\n", status, m.queryHeader("sender"));
             this.connections.put(sender, status);
             System.out.println(status);
             if (!status){
-                this.receiveCount++;
+                this.receiveInactiveCount++;
             }
-
+            this.receiveCount++;
         }
     }
 
@@ -94,7 +103,8 @@ public class ObserverNode extends Node {
             observe.start();
             this.sleep(3000);
             observe.interrupt();
-            if (this.sentCount == this.receiveCount) {
+            System.out.printf("%d:%d\n", sentCount, receiveInactiveCount);
+            if (this.sentCount == this.receiveInactiveCount) {
                 this.roundsSilentNodes++;
             } else {
                 this.roundsSilentNodes = 0;
@@ -106,6 +116,5 @@ public class ObserverNode extends Node {
         }
         System.exit(0);
     }
-
 
 }

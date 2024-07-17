@@ -12,12 +12,12 @@ public class ObserverHandler extends Thread {
 
     @Override
     public void run() {
+        node.resetReceiveInactiveCount();
         node.resetReceiveCount();
         while (!Thread.interrupted()) {
             try {
                 node.checkIncomingMessages();
                 if (node.getReceiveCount() == node.getConnectionCount()) {
-                    System.out.printf("%d, %d", node.getReceiveCount(), node.getConnectionCount());
                     break;
                 }
             } catch (Exception e) {

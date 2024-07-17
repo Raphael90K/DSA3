@@ -11,7 +11,7 @@ public class MainA3 {
     public static void main(String[] args) {
 
         Simulator simulator = Simulator.getInstance();
-        int nNodes = 5;
+        int nNodes = 10;
         LinkedList<Node> nodes = new LinkedList<>();
         LinkedList<String> nodeNames = new LinkedList<>();
         ObserverNode observerNode = ObserverNode.getInstance();
@@ -25,7 +25,7 @@ public class MainA3 {
             ((NetworkNode) node).setConnections(nodeNames);
         }
         observerNode.setConnections(nodeNames);
-        simulator.simulate(20);
+        simulator.simulate(120);
         simulator.shutdown();
     }
 
