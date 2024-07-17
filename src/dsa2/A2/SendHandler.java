@@ -1,5 +1,8 @@
 package dsa2.A2;
 
+/**
+ * Thread zum Senden der Nachrichten, während der Knoten auf weitere eingehende Nachrichten wartet.
+ */
 public class SendHandler extends Thread {
 
     private final NetworkNode node;
@@ -9,6 +12,7 @@ public class SendHandler extends Thread {
         this.setDaemon(true);
         this.setName("SendHandler" + nodeName);
     }
+
 
     @Override
     public void run() {

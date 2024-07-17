@@ -11,18 +11,32 @@ public class ObserverNode extends Node {
 
     static ObserverNode observerNode = null;
 
+    // speichert die Verbindungen
     private final HashMap<String, Boolean> connections = new HashMap<>();
-    int activeNodes = 0;
-    int sentCount = 0;
-    int receiveInactiveCount = 0;
-    int roundsSilentNodes = 0;
-    private int receiveCount = 0;
 
+    // zählt in jeder Iteration die gesendeten Nachrichten
+    private int sentCount = 0;
+    // zählt in jeder Iteration die empfangenen Nachrichten
+    private int receiveCount = 0;
+    // zählt in jeder Iteration die empfangenen Nachrichten mit Status 0 / false
+    private int receiveInactiveCount = 0;
+    // zählt die Runden in denen alle Knoten inaktiv waren.
+    private int roundsAllInactive = 0;
+
+
+    /**
+     * Obersever Knoten, implementiert nach dem Doppelzählverfahren aus der Vorlesung.
+     */
     private ObserverNode() {
         super("ObserverNode");
-        System.out.printf("%s instantiated.\n", this.NodeName());
+        System.out.printf("#%s#: instantiated.\n", this.NodeName());
     }
 
+    /**
+     * Gibt den die Singleton Instanz des Observerknotens zurück.
+     *
+     * @return
+     */
     public static ObserverNode getInstance() {
         if (observerNode == null) {
             observerNode = new ObserverNode();
@@ -32,6 +46,11 @@ public class ObserverNode extends Node {
         }
     }
 
+    /**
+     * gibt den Namen des Knoten zurück.
+     *
+     * @return
+     */
     public String getNodeName() {
         return this.NodeName();
     }
@@ -40,14 +59,13 @@ public class ObserverNode extends Node {
         for (String connection : connections) {
             this.connections.put(connection, true);
         }
-        this.activeNodes = connections.size();
     }
 
     public int getConnectionCount() {
         return this.connections.keySet().size();
     }
 
-    public int getReceiveCount(){
+    public int getReceiveCount() {
         return this.receiveCount;
     }
 
@@ -55,14 +73,13 @@ public class ObserverNode extends Node {
         this.receiveCount = 0;
     }
 
-    public int getReceiveInactiveCount() {
-        return this.receiveInactiveCount;
-    }
-
     public void resetReceiveInactiveCount() {
         this.receiveInactiveCount = 0;
     }
 
+    /**
+     * Sendet in jeder Iteration die Kontrollnachricht an alle Knoten.
+     */
     public void sendMessage() {
         Message m = new Message().addHeader("status", 0);
         this.sentCount = 0;
@@ -72,27 +89,37 @@ public class ObserverNode extends Node {
         }
     }
 
+    /**
+     * Checkt die eingehenden Nachrichten und zählt die Inaktiven Knoten und Nachrichten insgesamt.
+     */
     public void checkIncomingMessages() {
         Message m = this.receive();
         if (m.getHeader().containsKey("status")) {
             String sender = m.queryHeader("sender");
             Boolean status = m.queryHeader("status").equals("1");
-            System.out.printf("Status %b received from Node %s\n", status, m.queryHeader("sender"));
+            System.out.printf("#Observer#: Status %b received from Node %s\n", status, m.queryHeader("sender"));
             this.connections.put(sender, status);
-            System.out.println(status);
-            if (!status){
+            if (!status) {
                 this.receiveInactiveCount++;
             }
             this.receiveCount++;
         }
     }
 
+    /**
+     * Loggt sobald die Terminierung des Netzwerks erkannt wurde.
+     */
     private void logTermination() {
         Logger logger = this.getLogger();
         logger.debug("Network terminal state reached.");
-        System.out.println("Network terminated");
+        System.out.println("#Observer#: Network terminated");
     }
 
+    /**
+     * Hauptfunktion des Knotens. In jeder Iteration wird ein Thread gestartet, der die eingehenden Nachrichten verarbeitet.
+     * Nach drei Sekunden wird der Thread beendet, auch wenn nicht alle Knoten geantwortet haben. So sollen
+     * verlorene Nachrichten abgefangen werden.
+     */
     @Override
     protected void engage() {
         Message m;
@@ -103,13 +130,12 @@ public class ObserverNode extends Node {
             observe.start();
             this.sleep(3000);
             observe.interrupt();
-            System.out.printf("%d:%d\n", sentCount, receiveInactiveCount);
             if (this.sentCount == this.receiveInactiveCount) {
-                this.roundsSilentNodes++;
+                this.roundsAllInactive++;
             } else {
-                this.roundsSilentNodes = 0;
+                this.roundsAllInactive = 0;
             }
-            if (this.roundsSilentNodes >= 2){
+            if (this.roundsAllInactive >= 2) {
                 this.logTermination();
                 break;
             }

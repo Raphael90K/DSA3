@@ -1,5 +1,8 @@
 package dsa2.A3;
 
+/**
+ * Thread zum Empfangen der Statusrückmeldungen während der Knoten wartet.
+ */
 public class ObserverHandler extends Thread {
 
     private final ObserverNode node;
