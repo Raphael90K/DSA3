@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 
 public class Node {
 
-    public Node (String name ) {
+    public Node (String name) {
         nc = new NetworkConnection(name);
         nc.engage(this::engage);
     }

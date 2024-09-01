@@ -20,4 +20,8 @@ public class NetworkNode extends Node {
         this.connections = connections;
         this.majority = ((double) connections.size()) / 2;
     }
+
+    public List<String> getConnections() {
+        return connections;
+    }
 }
