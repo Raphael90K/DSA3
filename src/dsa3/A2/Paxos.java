@@ -7,10 +7,12 @@ public class Paxos {
     private int highestProposalNumber;
     private int networkSize;
     private int nodeId;
+    private int acceptedPropose;
     private Node node;
 
     public Paxos(Node node, int nodeId, int networkSize) {
         this.highestProposalNumber = 0;
+        this.acceptedPropose = -1;
         this.networkSize = networkSize;
         this.nodeId = nodeId;
         this.node = node;
@@ -45,7 +47,6 @@ public class Paxos {
         }
         return msg;
     }
-
 
 
     public void handle(Message message) {
