@@ -1,23 +1,25 @@
 package dsa3.A2.Bank;
 
 public class Transaction {
-    private String consensusID;
+    private int consensusID;
     private String type; // z.B. "Deposit" oder "Withdrawal"
-    private String change;
+    private double change;
     private double value;
 
-    public Transaction(String consensId, String type, String change, double value) {
+    public Transaction() {}
+
+    public Transaction(int consensId, String type, double change, double value) {
         this.consensusID = consensId;
         this.type = type;
         this.change = change;
         this.value = value;
     }
 
-    public String getConsensusID() {
+    public int getConsensusID() {
         return consensusID;
     }
 
-    public void setConsensusID(String consensusID) {
+    public void setConsensusID(int consensusID) {
         this.consensusID = consensusID;
     }
 
@@ -29,11 +31,11 @@ public class Transaction {
         this.type = type;
     }
 
-    public String getChange() {
+    public double getChange() {
         return change;
     }
 
-    public void setChange(String change) {
+    public void setChange(double change) {
         this.change = change;
     }
 
@@ -45,8 +47,4 @@ public class Transaction {
         this.value = value;
     }
 
-    @Override
-    public String toString() {
-        return "Transaction{consensId='" + consensusID + "', type='" + type + "', change='" + change + "', value=" + value + '}';
-    }
 }

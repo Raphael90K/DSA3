@@ -11,6 +11,8 @@ public class BankAccount {
     private double balance;
     private List<Transaction> transactions;
 
+    public BankAccount() {}
+
     public BankAccount(String owner, double balance, List<Transaction> transactions) {
         this.owner = owner;
         this.balance = balance;
@@ -28,11 +30,6 @@ public class BankAccount {
     public List<Transaction> getTransactions() {return transactions;}
 
     public void setTransactions(List<Transaction> transactions) {this.transactions = transactions;}
-
-    @Override
-    public String toString() {
-        return "BankAccount{name='" + owner + "', balance=" + balance + ", transactions=" + transactions + '}';
-    }
 
     public void saveAccount(String filename) {
         ObjectMapper objectMapper = new ObjectMapper();
