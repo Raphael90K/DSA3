@@ -49,6 +49,7 @@ public class Paxos {
     }
 
 
+    
     public void handle(Message message) {
         Command c = Command.valueOf(message.queryHeader("type"));
         switch (c) {
