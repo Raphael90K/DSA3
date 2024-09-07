@@ -1,6 +1,6 @@
 package dsa3.A2.Bank;
 
-class Transaction {
+public class Transaction {
     private String consensusID;
     private String type; // z.B. "Deposit" oder "Withdrawal"
     private String change;
