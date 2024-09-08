@@ -7,6 +7,7 @@ import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class BankAccount {
+    private Transaction lastTransaction;
     private String owner;
     private double balance;
     private List<Transaction> transactions;
@@ -14,6 +15,7 @@ public class BankAccount {
     public BankAccount() {}
 
     public BankAccount(String owner, double balance, List<Transaction> transactions) {
+        this.lastTransaction = null;
         this.owner = owner;
         this.balance = balance;
         this.transactions = transactions;
@@ -31,6 +33,14 @@ public class BankAccount {
 
     public void setTransactions(List<Transaction> transactions) {this.transactions = transactions;}
 
+    public void addTransaction(Transaction transaction) {
+        this.transactions.add(transaction);
+    }
+
+    private void setLastTransaction(Transaction last) {
+        this.lastTransaction = last;
+    }
+
     public void saveAccount(String filename) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
@@ -45,6 +55,7 @@ public class BankAccount {
         BankAccount account = null;
         try {
             account = objectMapper.readValue(new File(filename), BankAccount.class);
+            account.setLastTransaction(account.getTransactions().getLast());
         } catch (IOException e) {
             e.printStackTrace();
         }
