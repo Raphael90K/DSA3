@@ -1,5 +1,6 @@
 package dsa3.A2;
 
+import org.oxoo2a.sim4da.Message;
 import org.oxoo2a.sim4da.Node;
 
 import java.util.List;
@@ -23,5 +24,15 @@ public class NetworkNode extends Node {
 
     public List<String> getConnections() {
         return connections;
+    }
+
+    public void sendAll(Message msg) {
+        for (String node : this.connections) {
+            sendBlindly(msg, node);
+        }
+    }
+
+    public void sendOne(Message msg, String node) {
+        sendBlindly(msg, node);
     }
 }

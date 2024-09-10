@@ -13,11 +13,11 @@ public class Node {
         nc.getLogger().debug("Engaging node, but no code defined");
     }
 
-    public void send ( Message message, String to_node_name ) throws UnknownNodeException {
+    protected void send ( Message message, String to_node_name ) throws UnknownNodeException {
         nc.send(message, to_node_name);
     }
 
-    public void sendBlindly ( Message message, String to_node_name ) {
+    protected void sendBlindly ( Message message, String to_node_name ) {
         nc.sendBlindly(message, to_node_name);
     }
 

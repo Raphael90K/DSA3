@@ -1,16 +1,15 @@
 package dsa3.A2;
 
 import org.oxoo2a.sim4da.Message;
-import org.oxoo2a.sim4da.Node;
 
 public class Paxos {
     private int highestProposalNumber;
     private int networkSize;
     private int nodeId;
     private int acceptedPropose;
-    private Node node;
+    private NetworkNode node;
 
-    public Paxos(Node node, int nodeId, int networkSize) {
+    public Paxos(NetworkNode node, int nodeId, int networkSize) {
         this.highestProposalNumber = 0;
         this.acceptedPropose = -1;
         this.networkSize = networkSize;
@@ -18,21 +17,21 @@ public class Paxos {
         this.node = node;
     }
 
-    private Message preparePropose(int balance, int difference) {
+    private void propose(int balance, int difference) {
         this.highestProposalNumber = (this.highestProposalNumber / this.networkSize) * this.networkSize + this.nodeId;
         Message msg = new Message();
         msg.addHeader("type", "PROPOSE");
         msg.add("difference", difference);
         msg.add("balance", balance + difference);
-        return msg;
+        this.node.sendAll(msg);
     }
 
-    private Message preparePrepare(){
+    private void prepare(){
         this.highestProposalNumber = (this.highestProposalNumber / this.networkSize) * this.networkSize + this.nodeId;
         Message msg = new Message();
         msg.addHeader("type", "PREPARE");
         msg.add("ID", this.highestProposalNumber);
-        return msg;
+        this.node.sendAll(msg);
     }
 
     private Message handlePrepare(Message msg) {
