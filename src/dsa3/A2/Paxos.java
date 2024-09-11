@@ -18,7 +18,7 @@ public class Paxos {
     }
 
     private void propose(int balance, int difference) {
-        this.highestProposalNumber = (this.highestProposalNumber / this.networkSize) * this.networkSize + this.nodeId;
+        this.highestProposalNumber = ((this.highestProposalNumber + 1) / this.networkSize) * this.networkSize + this.nodeId;
         Message msg = new Message();
         msg.addHeader("type", "PROPOSE");
         msg.add("difference", difference);
@@ -45,6 +45,41 @@ public class Paxos {
             msg = null;
         }
         return msg;
+    }
+
+    public void handlePropose(Message msg) {
+        if (msg.queryInteger("ID") >= this.highestProposalNumber) {
+            this.highestProposalNumber = msg.queryInteger("ID");
+            this.acceptedPropose = msg.queryInteger("balance");
+
+            Message acceptMessage = new Message();
+            acceptMessage.addHeader("type", "ACCEPT");
+            acceptMessage.add("ID", this.highestProposalNumber);
+            acceptMessage.add("balance", this.acceptedPropose);
+            this.node.sendAll(acceptMessage);
+        }
+    }
+
+    private Message handleAccept(Message msg) {
+        Integer proposalId = msg.queryInteger("ID");
+        Integer proposedValue = msg.queryInteger("balance");
+        Message response = new Message();
+
+        if (proposalId >= this.highestProposalNumber) {
+            // Update accepted proposal and highest proposal number
+            this.highestProposalNumber = proposalId;
+            this.acceptedPropose = proposedValue;
+
+            // Send ACCEPT message as confirmation
+            response.addHeader("type", "ACCEPT");
+            response.add("ID", this.highestProposalNumber);
+            response.add("balance", this.acceptedPropose);
+        } else {
+            // If the proposal ID is less than the promised proposal, reject the accept
+            response = null; // Could also send a REJECT message if desired
+        }
+
+        return response;
     }
 
 
