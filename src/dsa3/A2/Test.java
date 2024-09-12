@@ -6,9 +6,21 @@ import dsa3.A2.Bank.BankAccount;
 import dsa3.A2.Bank.Transaction;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class Test {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws JsonProcessingException {
+        NetworkNode n1 = new NetworkNode(0);
+        NetworkNode n2 = new NetworkNode(1);
+        List<String> nodes = Arrays.asList(n1.getName(),n2.getName());
+
+        n1.setConnections(nodes);
+        n2.setConnections(nodes);
+
+        NetworkNode n3 = new NetworkNode(2);
+
+    }
+    public static void main2(String[] args) {
         Transaction t1 = new Transaction(1,1, "add", 5, 5);
         Transaction t2 = new Transaction(2, 2, "add", 5, 10);
         Transaction t3 = new Transaction(3, 3, "add", -5, 5);

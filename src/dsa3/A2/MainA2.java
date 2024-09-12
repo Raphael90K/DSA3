@@ -3,24 +3,23 @@ package dsa3.A2;
 import org.oxoo2a.sim4da.Node;
 import org.oxoo2a.sim4da.Simulator;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 public class MainA2 {
 
     public static void main(String[] args) {
 
         Simulator simulator = Simulator.getInstance();
-        int nNodes = 5;
-        LinkedList<Node> nodes = new LinkedList<>();
-        LinkedList<String> nodeNames = new LinkedList<>();
-        for (int i = 0; i < nNodes; i++) {
-            NetworkNode node = new NetworkNode(i);
-            nodeNames.add("Node" + i);
-            nodes.add(node);
-        }
-        for (Node node : nodes) {
-            ((NetworkNode) node).setConnections(nodeNames);
-        }
+        NetworkNode n1 = new NetworkNode(0);
+        NetworkNode n2 = new NetworkNode(1);
+        List<String> nodes = Arrays.asList(n1.getName(),n2.getName());
+
+        n1.setConnections(nodes);
+        n2.setConnections(nodes);
+
+        NetworkNode n3 = new NetworkNode(2);
         simulator.simulate(10);
         simulator.shutdown();
     }

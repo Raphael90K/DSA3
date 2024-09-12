@@ -32,6 +32,10 @@ public class NetworkNode extends Node {
         }
     }
 
+    public String getName(){
+        return this.getName();
+    }
+
     public void sendOne(Message msg, String node) {
         sendBlindly(msg, node);
     }
