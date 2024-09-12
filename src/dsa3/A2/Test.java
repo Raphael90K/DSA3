@@ -5,14 +5,13 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import dsa3.A2.Bank.BankAccount;
 import dsa3.A2.Bank.Transaction;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Test {
     public static void main(String[] args) {
-        Transaction t1 = new Transaction(1, "add", 5, 5);
-        Transaction t2 = new Transaction(2, "add", 5, 10);
-        Transaction t3 = new Transaction(3, "add", -5, 5);
+        Transaction t1 = new Transaction(1,1, "add", 5, 5);
+        Transaction t2 = new Transaction(2, 2, "add", 5, 10);
+        Transaction t3 = new Transaction(3, 3, "add", -5, 5);
         BankAccount ba = new BankAccount("Me", 5, Arrays.asList(t1, t2, t3));
 
         ObjectMapper om = new ObjectMapper();

@@ -87,6 +87,9 @@ public class Paxos {
     public void handle(Message message) {
         Command c = Command.valueOf(message.queryHeader("type"));
         switch (c) {
+            case Command.CHANGE:
+                System.out.println("handle change");
+                break;
             case Command.PREPARE:
                 System.out.println("handle prepare");
                 break;
@@ -112,6 +115,7 @@ public class Paxos {
 }
 
 enum Command {
+    CHANGE,
     PREPARE,
     PROMISE,
     PROPOSE,
