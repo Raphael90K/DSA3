@@ -61,8 +61,8 @@ public class Paxos {
     }
 
     private Message handleAccept(Message msg) {
-        Integer proposalId = msg.queryInteger("ID");
-        Integer proposedValue = msg.queryInteger("balance");
+        int proposalId = msg.queryInteger("ID");
+        int proposedValue = msg.queryInteger("balance");
         Message response = new Message();
 
         if (proposalId >= this.highestProposalNumber) {
@@ -88,16 +88,20 @@ public class Paxos {
         Command c = Command.valueOf(message.queryHeader("type"));
         switch (c) {
             case Command.PREPARE:
+                System.out.println("handle prepare");
                 break;
             case Command.PROMISE:
-                // Handle PROMISE messages (simplified)
+                System.out.println("handle promise");
                 break;
             case Command.PROPOSE:
+                System.out.println("handle propose");
                 break;
             case Command.ACCEPT:
+                System.out.println("handle accept");
                 // handle ACCEPT
                 break;
             case Command.LEARN:
+                System.out.println("handle learn");
                 // learn
                 break;
             default:
