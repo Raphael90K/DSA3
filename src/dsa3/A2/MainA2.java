@@ -10,7 +10,6 @@ import java.util.List;
 public class MainA2 {
 
     public static void main(String[] args) {
-
         Simulator simulator = Simulator.getInstance();
         NetworkNode n1 = new NetworkNode(0);
         NetworkNode n2 = new NetworkNode(1);
