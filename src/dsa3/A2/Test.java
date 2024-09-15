@@ -38,7 +38,7 @@ public class Test {
         }
         ba.saveAccount("test.json");
 
-        Bank ba2 = Bank.fromFile("test.json");
+        Bank ba2 = Bank.fromFile("test");
         try {
             System.out.println(om.writeValueAsString(ba2));
         } catch (JsonProcessingException e) {

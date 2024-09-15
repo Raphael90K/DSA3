@@ -7,15 +7,12 @@ import java.util.List;
 import java.util.Random;
 
 public class Client extends Node {
-    static Random rand = new Random();
+    static Random rng = new Random();
 
-    private final int id;
     private List<String> bankNodes;
-    private Random rng;
 
-    public Client(int id) {
-        super("Client" + id);
-        this.id = id;
+    public Client(String name) {
+        super(name);
     }
 
     public void setBankNodes(List<String> bankNodes) {
@@ -43,25 +40,10 @@ public class Client extends Node {
         }
         double change = rng.nextDouble(-100, 100);
         Message msg = createChangeBankMsg(change);
-        String randomBankNode = bankNodes.get(rand.nextInt(bankNodes.size()));
+        String randomBankNode = bankNodes.get(rng.nextInt(bankNodes.size()));
         this.sendBlindly(msg, randomBankNode);
-        Response response = new Response(this);
-        response.start();
+        Message incomingMsg = this.receive();
+        this.getLogger().debug(incomingMsg.queryHeader("status"));
     }
 
-}
-
-class Response extends Thread {
-
-    private final Client client;
-
-    public Response(Client client) {
-        this.client = client;
-        this.setDaemon(true);
-    }
-
-    @Override
-    public void run() {
-        client.outputResponse();
-    }
 }

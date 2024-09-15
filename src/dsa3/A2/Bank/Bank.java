@@ -48,12 +48,28 @@ public class Bank {
     }
 
     public void addTransaction(Transaction transaction) {
+        this.lastTransaction = transaction;
         this.transactions.add(transaction);
     }
 
-    private void setLastTransaction(Transaction last) {
+    public void setLastTransaction(Transaction last) {
         this.lastTransaction = last;
     }
+
+    public Transaction getLastTransaction() {
+        return lastTransaction;
+    }
+
+    public Transaction newTransaction(int proposalNumber, double change) {
+        Transaction newTx;
+        if (lastTransaction == null) {
+            newTx = new Transaction(0, proposalNumber, change, change);
+        } else {
+            newTx = new Transaction(lastTransaction.getTxId() + 1, proposalNumber, change, lastTransaction.getValue() + change);
+        }
+        return newTx;
+    }
+
 
     public boolean checkValidTransaction(Transaction transaction) {
         if (this.lastTransaction == null) {
