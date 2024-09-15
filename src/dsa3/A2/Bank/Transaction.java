@@ -1,29 +1,30 @@
 package dsa3.A2.Bank;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class Transaction {
-    private int id;
+    private int txId;
     private int consensusID;
-    private String type; // z.B. "Deposit" oder "Withdrawal"
     private double change;
     private double value;
 
     public Transaction() {
     }
 
-    public Transaction(int id, int consensId, String type, double change, double value) {
-        this.id = id;
+    public Transaction(int id, int consensId, double change, double value) {
+        this.txId = id;
         this.consensusID = consensId;
-        this.type = type;
         this.change = change;
         this.value = value;
     }
 
-    public int getId() {
-        return id;
+    public int getTxId() {
+        return txId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTxId(int txId) {
+        this.txId = txId;
     }
 
     public int getConsensusID() {
@@ -32,14 +33,6 @@ public class Transaction {
 
     public void setConsensusID(int consensusID) {
         this.consensusID = consensusID;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 
     public double getChange() {
@@ -56,6 +49,25 @@ public class Transaction {
 
     public void setValue(double value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        ObjectMapper om = new ObjectMapper();
+        try {
+            return om.writeValueAsString(this);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public static Transaction fromString(String string) {
+        ObjectMapper om = new ObjectMapper();
+        try {
+            return om.readValue(string, Transaction.class);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }

@@ -10,7 +10,7 @@ public class Client extends Node {
     static Random rand = new Random();
 
     private final int id;
-    private List<String> connections;
+    private List<String> bankNodes;
     private Random rng;
 
     public Client(int id) {
@@ -18,8 +18,20 @@ public class Client extends Node {
         this.id = id;
     }
 
-    public void setConnections(List<String> connections) {
-        this.connections = connections;
+    public void setBankNodes(List<String> bankNodes) {
+        this.bankNodes = bankNodes;
+    }
+
+    public Message createChangeBankMsg(double amount) {
+        Message msg = new Message();
+        msg.addHeader("type", "CHANGE");
+        msg.add("amount", Double.toString(amount));
+        return msg;
+    }
+
+    public void outputResponse() {
+        Message msg = this.receive();
+        System.out.println(msg.queryHeader("status"));
     }
 
     @Override
@@ -29,8 +41,27 @@ public class Client extends Node {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        Message msg = new Message();
-        msg.addHeader("type", "CHANGE");
-        this.sendBlindly(msg, this.connections.get(rng.nextInt()));
+        double change = rng.nextDouble(-100, 100);
+        Message msg = createChangeBankMsg(change);
+        String randomBankNode = bankNodes.get(rand.nextInt(bankNodes.size()));
+        this.sendBlindly(msg, randomBankNode);
+        Response response = new Response(this);
+        response.start();
+    }
+
+}
+
+class Response extends Thread {
+
+    private final Client client;
+
+    public Response(Client client) {
+        this.client = client;
+        this.setDaemon(true);
+    }
+
+    @Override
+    public void run() {
+        client.outputResponse();
     }
 }
