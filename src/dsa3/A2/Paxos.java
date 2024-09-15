@@ -68,6 +68,7 @@ public class Paxos {
                 Message accept = new Message();
                 accept.addHeader("type", "ACCEPT");
                 accept.add("accept", "true");
+                accept.add("ID", this.acceptedPrepare);
                 this.node.sendOne(accept, msg.queryHeader("sender"));
             }
         }

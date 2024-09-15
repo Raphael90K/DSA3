@@ -26,7 +26,7 @@ public class Client extends Node {
         return msg;
     }
 
-    public void outputResponse() {
+    public void outputResponse() throws InterruptedException {
         Message msg = this.receive();
         System.out.println(msg.queryHeader("status"));
     }
@@ -42,7 +42,12 @@ public class Client extends Node {
         Message msg = createChangeBankMsg(change);
         String randomBankNode = bankNodes.get(rng.nextInt(bankNodes.size()));
         this.sendBlindly(msg, randomBankNode);
-        Message incomingMsg = this.receive();
+        Message incomingMsg = null;
+        try {
+            incomingMsg = this.receive();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         this.getLogger().debug(incomingMsg.queryHeader("status"));
     }
 

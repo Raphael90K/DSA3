@@ -26,7 +26,7 @@ public class Node {
         nc.send(message);
     }
 
-    protected Message receive () {
+    protected Message receive () throws InterruptedException {
         return nc.receive();
     }
 

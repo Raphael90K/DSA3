@@ -102,7 +102,11 @@ public class NetworkNode extends Node {
         SendHandler sendHandler = new SendHandler(this, this.NodeName());
         sendHandler.start();
         while (true) {
-            m = this.receive();
+            try {
+                m = this.receive();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             if (m.getHeader().containsKey("Firework")) {
                 System.out.printf("#%s#: Firework received from %s\n", this.NodeName(), m.queryHeader("sender"));
                 if (!this.isActive.get()) {

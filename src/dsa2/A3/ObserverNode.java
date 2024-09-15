@@ -97,7 +97,12 @@ public class ObserverNode extends Node {
      * Checkt die eingehenden Nachrichten und zählt die Inaktiven Knoten und Nachrichten insgesamt.
      */
     public void checkIncomingMessages() {
-        Message m = this.receive();
+        Message m = null;
+        try {
+            m = this.receive();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         if (m.getHeader().containsKey("status")) {
             String sender = m.queryHeader("sender");
             Boolean status = m.queryHeader("status").equals("1");

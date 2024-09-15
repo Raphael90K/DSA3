@@ -37,7 +37,7 @@ public class NetworkConnection {
         catch (InterruptedException e) {}
     }
 
-    public Message receive () {
+    public Message receive () throws InterruptedException {
         Message m = network.receive(this);
         logger.debug("Received message from "+m.queryHeader("sender"));
         return m;

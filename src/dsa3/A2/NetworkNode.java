@@ -56,7 +56,12 @@ public class NetworkNode extends Node {
 
     public void engage() {
         while (true) {
-            Message msg = this.receive();
+            Message msg = null;
+            try {
+                msg = this.receive();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
             this.handle(msg);
         }
     }
@@ -99,11 +104,11 @@ public class NetworkNode extends Node {
 
                 // handle accept
                 this.paxos.propose(newTx, proposalNumber);
-                NetworkNodeCounter ncAccept = new NetworkNodeCounter(this, Command.ACCEPT);
-                ncAccept.start();
+                nc = new NetworkNodeCounter(this, Command.ACCEPT);
+                nc.start();
                 try {
                     Thread.sleep(500);
-                    ncAccept.interrupt();
+                    nc.interrupt();
                 } catch (InterruptedException e) {
 
                 }
@@ -137,11 +142,16 @@ public class NetworkNode extends Node {
 
 
     public synchronized void countMessages(Command command) {
-        Message msg = this.receive();
-        System.out.println(msg);
-        if (command == Command.valueOf(msg.queryHeader("type"))) {
-            this.getLogger().debug("{} from {} with id {}", command, msg.queryHeader("sender"), msg.query("ID"));
-            this.answers++;
+        Message msg = null;
+        try {
+            msg = this.receive();
+            System.out.println(msg);
+            if (command == Command.valueOf(msg.queryHeader("type"))) {
+                this.getLogger().debug("{} from {} with id {}", command, msg.queryHeader("sender"), msg.query("ID"));
+                this.answers++;
+            }
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
         }
     }
 }
