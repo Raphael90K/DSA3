@@ -1,4 +1,4 @@
-package dsa3.A2;
+package dsa3.A2.BankNode;
 
 import dsa3.A2.Bank.Bank;
 import dsa3.A2.Bank.Transaction;
@@ -9,10 +9,10 @@ public class Paxos {
     private int networkSize;
     private int nodeId;
     private int acceptedPrepare;
-    private NetworkNode node;
+    private BankNode node;
     private Bank bankAccount;
 
-    public Paxos(NetworkNode node, int nodeId, int networkSize) {
+    public Paxos(BankNode node, int nodeId, int networkSize) {
         this.highestProposalNumber = 0;
         this.acceptedPrepare = -1;
         this.networkSize = networkSize;
@@ -39,18 +39,13 @@ public class Paxos {
     public void handlePrepare(Message msg) {
         Integer id = msg.queryInteger("ID");
         Message newMsg = new Message();
-        if (id >= this.highestProposalNumber) {
+        if (id > this.highestProposalNumber) {
             this.highestProposalNumber = id;
             this.acceptedPrepare = id;
             newMsg.addHeader("type", "PROMISE");
             newMsg.add("ID", this.highestProposalNumber);
             this.node.sendOne(newMsg, msg.queryHeader("sender"));
         }
-    }
-
-    // TODO: write handle Promise
-    public void handlePromise(Message msg) {
-
     }
 
     public void propose(Transaction transaction, int proposalNumber) {
@@ -72,11 +67,6 @@ public class Paxos {
                 this.node.sendOne(accept, msg.queryHeader("sender"));
             }
         }
-    }
-
-    // TODO: write handle Accept
-    public void handleAccept(Message msg) {
-
     }
 
     public void learn(Transaction transaction) {

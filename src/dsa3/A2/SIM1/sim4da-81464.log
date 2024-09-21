@@ -1,0 +1,1577 @@
+2024-09-18 15:50:54,189 INFO [main] o.o.sim4da.sim4da [Simulator.java:15] sim4da V2.0 - Simulation started.
+2024-09-18 15:50:54,196 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for Node0
+2024-09-18 15:50:54,281 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for Node1
+2024-09-18 15:50:54,282 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for Node2
+2024-09-18 15:50:54,282 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for Node3
+2024-09-18 15:50:54,282 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for Node4
+2024-09-18 15:50:54,284 DEBUG [main] o.o.sim4da.Network [Network.java:32] Registering connection for client
+2024-09-18 15:50:54,768 DEBUG [Thread-5] client [Client.java:62] Transaction 0 initiated: 37.144643116729014
+2024-09-18 15:50:54,780 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:54,788 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:50:54,798 DEBUG [Thread-4] Node4 [BankNode.java:121] Node4 handle CHANGE 37.144643116729014
+2024-09-18 15:50:54,800 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:54,800 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:54,800 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:54,800 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:54,800 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:54,801 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:54,801 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node4 with id 9
+2024-09-18 15:50:54,802 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:54,801 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:54,801 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:54,802 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node4 with id 9
+2024-09-18 15:50:54,802 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node4 with id 9
+2024-09-18 15:50:54,802 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node4 with id 9
+2024-09-18 15:50:54,802 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:54,803 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:54,803 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:54,805 DEBUG [Thread-6] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:54,805 DEBUG [Thread-6] Node4 [BankNode.java:175] PROMISE from Node0 with id 9
+2024-09-18 15:50:54,805 DEBUG [Thread-6] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:54,805 DEBUG [Thread-6] Node4 [BankNode.java:175] PROMISE from Node1 with id 9
+2024-09-18 15:50:54,805 DEBUG [Thread-6] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:54,806 DEBUG [Thread-6] Node4 [BankNode.java:175] PROMISE from Node3 with id 9
+2024-09-18 15:50:54,806 DEBUG [Thread-6] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:54,806 DEBUG [Thread-6] Node4 [BankNode.java:175] PROMISE from Node2 with id 9
+2024-09-18 15:50:55,353 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:55,353 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:55,353 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,353 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:55,354 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:55,354 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,354 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,354 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node4 with id 9
+2024-09-18 15:50:55,354 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,354 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node4 with id 9
+2024-09-18 15:50:55,354 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node4 with id 9
+2024-09-18 15:50:55,354 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node4 with id 9
+2024-09-18 15:50:55,374 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:55,374 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:55,374 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:55,374 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:55,374 DEBUG [Thread-7] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:55,374 DEBUG [Thread-7] Node4 [BankNode.java:175] ACCEPT from Node3 with id 9
+2024-09-18 15:50:55,374 DEBUG [Thread-7] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:55,375 DEBUG [Thread-7] Node4 [BankNode.java:175] ACCEPT from Node2 with id 9
+2024-09-18 15:50:55,375 DEBUG [Thread-7] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:55,375 DEBUG [Thread-7] Node4 [BankNode.java:175] ACCEPT from Node0 with id 9
+2024-09-18 15:50:55,375 DEBUG [Thread-7] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:55,375 DEBUG [Thread-7] Node4 [BankNode.java:175] ACCEPT from Node1 with id 9
+2024-09-18 15:50:55,874 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:55,874 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,875 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node4 with id 9
+2024-09-18 15:50:55,875 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:55,876 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:55,876 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,876 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:55,876 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,876 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node4 with id 9
+2024-09-18 15:50:55,876 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:50:55,876 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,876 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node4 with id 9
+2024-09-18 15:50:55,877 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:55,877 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node4 with id 9
+2024-09-18 15:50:55,878 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 0: SUCCESS
+2024-09-18 15:50:56,034 DEBUG [Thread-5] client [Client.java:62] Transaction 1 initiated: -24.343036532769773
+2024-09-18 15:50:56,035 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,036 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:50:56,036 DEBUG [Thread-1] Node1 [BankNode.java:121] Node1 handle CHANGE -24.343036532769773
+2024-09-18 15:50:56,036 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:56,036 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:56,037 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:56,037 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node1 with id 11
+2024-09-18 15:50:56,037 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:56,037 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node1 with id 11
+2024-09-18 15:50:56,037 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node1 with id 11
+2024-09-18 15:50:56,037 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node1 with id 11
+2024-09-18 15:50:56,037 DEBUG [Thread-8] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:56,037 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,037 DEBUG [Thread-8] Node1 [BankNode.java:175] PROMISE from Node0 with id 11
+2024-09-18 15:50:56,038 DEBUG [Thread-8] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:56,038 DEBUG [Thread-8] Node1 [BankNode.java:175] PROMISE from Node2 with id 11
+2024-09-18 15:50:56,038 DEBUG [Thread-8] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:56,039 DEBUG [Thread-8] Node1 [BankNode.java:175] PROMISE from Node3 with id 11
+2024-09-18 15:50:56,040 DEBUG [Thread-8] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:56,040 DEBUG [Thread-8] Node1 [BankNode.java:175] PROMISE from Node4 with id 11
+2024-09-18 15:50:56,553 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:56,555 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,557 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node1 with id 11
+2024-09-18 15:50:56,555 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:56,561 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:56,562 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:56,562 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,562 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,562 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:56,562 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,563 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node1 with id 11
+2024-09-18 15:50:56,563 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node1 with id 11
+2024-09-18 15:50:56,563 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node1 with id 11
+2024-09-18 15:50:56,563 DEBUG [Thread-9] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:56,565 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,565 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,565 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:56,565 DEBUG [Thread-9] Node1 [BankNode.java:175] ACCEPT from Node0 with id 11
+2024-09-18 15:50:56,567 DEBUG [Thread-9] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:56,568 DEBUG [Thread-9] Node1 [BankNode.java:175] ACCEPT from Node2 with id 11
+2024-09-18 15:50:56,568 DEBUG [Thread-9] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:56,568 DEBUG [Thread-9] Node1 [BankNode.java:175] ACCEPT from Node3 with id 11
+2024-09-18 15:50:56,568 DEBUG [Thread-9] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:56,569 DEBUG [Thread-9] Node1 [BankNode.java:175] ACCEPT from Node4 with id 11
+2024-09-18 15:50:57,070 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:57,070 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:57,070 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,071 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:57,071 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:57,071 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,071 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:50:57,071 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node1 with id 11
+2024-09-18 15:50:57,071 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,071 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,071 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,071 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node1 with id 11
+2024-09-18 15:50:57,071 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node1 with id 11
+2024-09-18 15:50:57,071 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node1 with id 11
+2024-09-18 15:50:57,071 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 1: SUCCESS
+2024-09-18 15:50:57,221 DEBUG [Thread-5] client [Client.java:62] Transaction 2 initiated: -93.54977473700916
+2024-09-18 15:50:57,221 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,221 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:50:57,221 DEBUG [Thread-1] Node1 [BankNode.java:121] Node1 handle CHANGE -93.54977473700916
+2024-09-18 15:50:57,221 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:57,222 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:57,222 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:57,222 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,222 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,222 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:57,222 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node1 with id 16
+2024-09-18 15:50:57,222 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,222 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,222 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,222 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node1 with id 16
+2024-09-18 15:50:57,223 DEBUG [Thread-10] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:57,223 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node1 with id 16
+2024-09-18 15:50:57,223 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,223 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node1 with id 16
+2024-09-18 15:50:57,225 DEBUG [Thread-10] Node1 [BankNode.java:175] PROMISE from Node0 with id 16
+2024-09-18 15:50:57,225 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,225 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,225 DEBUG [Thread-10] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:57,226 DEBUG [Thread-10] Node1 [BankNode.java:175] PROMISE from Node2 with id 16
+2024-09-18 15:50:57,228 DEBUG [Thread-10] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:57,229 DEBUG [Thread-10] Node1 [BankNode.java:175] PROMISE from Node4 with id 16
+2024-09-18 15:50:57,229 DEBUG [Thread-10] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:57,229 DEBUG [Thread-10] Node1 [BankNode.java:175] PROMISE from Node3 with id 16
+2024-09-18 15:50:57,734 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:57,735 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,735 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node1 with id 16
+2024-09-18 15:50:57,736 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,736 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:57,736 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,736 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node1 with id 16
+2024-09-18 15:50:57,737 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,738 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:57,738 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,738 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node1 with id 16
+2024-09-18 15:50:57,740 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,740 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:57,740 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:57,740 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node1 with id 16
+2024-09-18 15:50:57,742 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:57,742 DEBUG [Thread-11] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:57,742 DEBUG [Thread-11] Node1 [BankNode.java:175] ACCEPT from Node0 with id 16
+2024-09-18 15:50:57,742 DEBUG [Thread-11] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:57,742 DEBUG [Thread-11] Node1 [BankNode.java:175] ACCEPT from Node2 with id 16
+2024-09-18 15:50:57,743 DEBUG [Thread-11] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:57,743 DEBUG [Thread-11] Node1 [BankNode.java:175] ACCEPT from Node3 with id 16
+2024-09-18 15:50:57,744 DEBUG [Thread-11] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:57,745 DEBUG [Thread-11] Node1 [BankNode.java:175] ACCEPT from Node4 with id 16
+2024-09-18 15:50:58,251 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:58,251 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:58,251 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,251 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:58,251 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,251 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,251 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,251 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node1 with id 16
+2024-09-18 15:50:58,251 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:50:58,251 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node1 with id 16
+2024-09-18 15:50:58,251 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,251 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node1 with id 16
+2024-09-18 15:50:58,251 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node1 with id 16
+2024-09-18 15:50:58,251 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,252 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 2: SUCCESS
+2024-09-18 15:50:58,668 DEBUG [Thread-5] client [Client.java:62] Transaction 3 initiated: 62.52514457532658
+2024-09-18 15:50:58,670 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,670 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:50:58,670 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE 62.52514457532658
+2024-09-18 15:50:58,671 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:58,671 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:58,672 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:58,672 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:58,672 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:58,673 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:58,673 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:58,674 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 23
+2024-09-18 15:50:58,672 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 23
+2024-09-18 15:50:58,674 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:58,674 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 23
+2024-09-18 15:50:58,675 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,675 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,675 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,675 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 23
+2024-09-18 15:50:58,676 DEBUG [Thread-12] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:58,679 DEBUG [Thread-12] Node3 [BankNode.java:175] PROMISE from Node0 with id 23
+2024-09-18 15:50:58,676 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:58,679 DEBUG [Thread-12] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:58,681 DEBUG [Thread-12] Node3 [BankNode.java:175] PROMISE from Node4 with id 23
+2024-09-18 15:50:58,681 DEBUG [Thread-12] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:58,681 DEBUG [Thread-12] Node3 [BankNode.java:175] PROMISE from Node1 with id 23
+2024-09-18 15:50:58,681 DEBUG [Thread-12] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:58,682 DEBUG [Thread-12] Node3 [BankNode.java:175] PROMISE from Node2 with id 23
+2024-09-18 15:50:59,181 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:59,183 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:59,184 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,185 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:59,185 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,185 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 23
+2024-09-18 15:50:59,186 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:59,186 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,186 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 23
+2024-09-18 15:50:59,187 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,187 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,187 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 23
+2024-09-18 15:50:59,189 DEBUG [Thread-13] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:59,189 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 23
+2024-09-18 15:50:59,189 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,190 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,190 DEBUG [Thread-13] Node3 [BankNode.java:175] ACCEPT from Node0 with id 23
+2024-09-18 15:50:59,191 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,191 DEBUG [Thread-13] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:50:59,191 DEBUG [Thread-13] Node3 [BankNode.java:175] ACCEPT from Node1 with id 23
+2024-09-18 15:50:59,192 DEBUG [Thread-13] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:50:59,192 DEBUG [Thread-13] Node3 [BankNode.java:175] ACCEPT from Node2 with id 23
+2024-09-18 15:50:59,193 DEBUG [Thread-13] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:50:59,193 DEBUG [Thread-13] Node3 [BankNode.java:175] ACCEPT from Node4 with id 23
+2024-09-18 15:50:59,705 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:59,707 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:59,709 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:59,707 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,710 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:59,710 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,710 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,710 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 23
+2024-09-18 15:50:59,711 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:50:59,711 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,711 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 23
+2024-09-18 15:50:59,711 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 23
+2024-09-18 15:50:59,711 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,712 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 23
+2024-09-18 15:50:59,716 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 3: SUCCESS
+2024-09-18 15:50:59,994 DEBUG [Thread-5] client [Client.java:62] Transaction 4 initiated: 79.46202730991905
+2024-09-18 15:50:59,995 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,996 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:50:59,996 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE 79.46202730991905
+2024-09-18 15:50:59,996 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:50:59,996 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:50:59,996 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:50:59,996 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,997 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:50:59,997 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,997 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,997 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:50:59,997 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 28
+2024-09-18 15:50:59,998 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 28
+2024-09-18 15:50:59,998 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 28
+2024-09-18 15:50:59,998 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,998 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 28
+2024-09-18 15:50:59,998 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,998 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,998 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:50:59,998 DEBUG [Thread-14] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:50:59,999 DEBUG [Thread-14] Node3 [BankNode.java:175] PROMISE from Node0 with id 28
+2024-09-18 15:50:59,999 DEBUG [Thread-14] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:00,000 DEBUG [Thread-14] Node3 [BankNode.java:175] PROMISE from Node2 with id 28
+2024-09-18 15:51:00,001 DEBUG [Thread-14] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:00,001 DEBUG [Thread-14] Node3 [BankNode.java:175] PROMISE from Node1 with id 28
+2024-09-18 15:51:00,001 DEBUG [Thread-14] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:00,001 DEBUG [Thread-14] Node3 [BankNode.java:175] PROMISE from Node4 with id 28
+2024-09-18 15:51:00,513 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:00,513 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:00,513 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:00,513 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:00,514 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:00,514 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:00,514 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:00,514 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 28
+2024-09-18 15:51:00,514 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:00,515 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 28
+2024-09-18 15:51:00,515 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 28
+2024-09-18 15:51:00,515 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 28
+2024-09-18 15:51:00,517 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:00,517 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:00,517 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:00,517 DEBUG [Thread-15] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:00,518 DEBUG [Thread-15] Node3 [BankNode.java:175] ACCEPT from Node4 with id 28
+2024-09-18 15:51:00,518 DEBUG [Thread-15] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:00,518 DEBUG [Thread-15] Node3 [BankNode.java:175] ACCEPT from Node2 with id 28
+2024-09-18 15:51:00,518 DEBUG [Thread-15] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:00,521 DEBUG [Thread-15] Node3 [BankNode.java:175] ACCEPT from Node1 with id 28
+2024-09-18 15:51:00,519 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:00,521 DEBUG [Thread-15] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:00,521 DEBUG [Thread-15] Node3 [BankNode.java:175] ACCEPT from Node0 with id 28
+2024-09-18 15:51:01,030 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:01,031 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,031 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,031 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:01,032 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,032 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:01,032 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:01,032 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,032 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 28
+2024-09-18 15:51:01,032 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 28
+2024-09-18 15:51:01,032 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 28
+2024-09-18 15:51:01,035 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,035 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,036 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 4: SUCCESS
+2024-09-18 15:51:01,036 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 28
+2024-09-18 15:51:01,468 DEBUG [Thread-5] client [Client.java:62] Transaction 5 initiated: 17.085209459653868
+2024-09-18 15:51:01,469 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [BankNode.java:121] Node1 handle CHANGE 17.085209459653868
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:01,469 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:01,469 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,469 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node1 with id 31
+2024-09-18 15:51:01,470 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node1 with id 31
+2024-09-18 15:51:01,470 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node1 with id 31
+2024-09-18 15:51:01,470 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,470 DEBUG [Thread-16] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:01,470 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node1 with id 31
+2024-09-18 15:51:01,471 DEBUG [Thread-16] Node1 [BankNode.java:175] PROMISE from Node0 with id 31
+2024-09-18 15:51:01,471 DEBUG [Thread-16] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:01,471 DEBUG [Thread-16] Node1 [BankNode.java:175] PROMISE from Node4 with id 31
+2024-09-18 15:51:01,471 DEBUG [Thread-16] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:01,471 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,471 DEBUG [Thread-16] Node1 [BankNode.java:175] PROMISE from Node2 with id 31
+2024-09-18 15:51:01,472 DEBUG [Thread-16] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:01,472 DEBUG [Thread-16] Node1 [BankNode.java:175] PROMISE from Node3 with id 31
+2024-09-18 15:51:01,990 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:01,991 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,991 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:01,991 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node1 with id 31
+2024-09-18 15:51:01,991 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:01,991 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,992 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node1 with id 31
+2024-09-18 15:51:01,992 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:01,992 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,992 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:01,993 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node1 with id 31
+2024-09-18 15:51:01,993 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node1 with id 31
+2024-09-18 15:51:01,993 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,994 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,994 DEBUG [Thread-17] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:01,994 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,994 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:01,995 DEBUG [Thread-17] Node1 [BankNode.java:175] ACCEPT from Node0 with id 31
+2024-09-18 15:51:01,998 DEBUG [Thread-17] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:02,002 DEBUG [Thread-17] Node1 [BankNode.java:175] ACCEPT from Node2 with id 31
+2024-09-18 15:51:02,006 DEBUG [Thread-17] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:02,007 DEBUG [Thread-17] Node1 [BankNode.java:175] ACCEPT from Node3 with id 31
+2024-09-18 15:51:02,007 DEBUG [Thread-17] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:02,007 DEBUG [Thread-17] Node1 [BankNode.java:175] ACCEPT from Node4 with id 31
+2024-09-18 15:51:02,507 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:02,508 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:02,508 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,509 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,509 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,509 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node1 with id 31
+2024-09-18 15:51:02,509 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:02,509 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,509 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node1 with id 31
+2024-09-18 15:51:02,510 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:02,510 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node1 with id 31
+2024-09-18 15:51:02,510 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,511 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,511 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node1 with id 31
+2024-09-18 15:51:02,511 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 5: SUCCESS
+2024-09-18 15:51:02,597 DEBUG [Thread-5] client [Client.java:62] Transaction 6 initiated: -47.92365362829785
+2024-09-18 15:51:02,597 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,598 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:02,598 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -47.92365362829785
+2024-09-18 15:51:02,598 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:02,599 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:02,599 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:02,599 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:02,599 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:02,600 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 38
+2024-09-18 15:51:02,600 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:02,600 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:02,600 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 38
+2024-09-18 15:51:02,602 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,602 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 38
+2024-09-18 15:51:02,603 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:02,603 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,604 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,605 DEBUG [Thread-18] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:02,605 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 38
+2024-09-18 15:51:02,606 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:02,606 DEBUG [Thread-18] Node3 [BankNode.java:175] PROMISE from Node0 with id 38
+2024-09-18 15:51:02,606 DEBUG [Thread-18] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:02,606 DEBUG [Thread-18] Node3 [BankNode.java:175] PROMISE from Node1 with id 38
+2024-09-18 15:51:02,606 DEBUG [Thread-18] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:02,606 DEBUG [Thread-18] Node3 [BankNode.java:175] PROMISE from Node2 with id 38
+2024-09-18 15:51:02,607 DEBUG [Thread-18] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:02,607 DEBUG [Thread-18] Node3 [BankNode.java:175] PROMISE from Node4 with id 38
+2024-09-18 15:51:03,111 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:03,111 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,111 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:03,111 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:03,111 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,111 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,111 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,111 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 38
+2024-09-18 15:51:03,111 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 38
+2024-09-18 15:51:03,111 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 38
+2024-09-18 15:51:03,111 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:03,111 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,112 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 38
+2024-09-18 15:51:03,112 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:03,112 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [BankNode.java:175] ACCEPT from Node0 with id 38
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [BankNode.java:175] ACCEPT from Node1 with id 38
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:03,112 DEBUG [Thread-19] Node3 [BankNode.java:175] ACCEPT from Node2 with id 38
+2024-09-18 15:51:03,112 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:03,113 DEBUG [Thread-19] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:03,113 DEBUG [Thread-19] Node3 [BankNode.java:175] ACCEPT from Node4 with id 38
+2024-09-18 15:51:03,625 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:03,625 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,625 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 38
+2024-09-18 15:51:03,625 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,625 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:03,625 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:03,625 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,625 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,625 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:03,626 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,626 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 38
+2024-09-18 15:51:03,626 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 38
+2024-09-18 15:51:03,626 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,626 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 6: SUCCESS
+2024-09-18 15:51:03,626 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 38
+2024-09-18 15:51:03,644 DEBUG [Thread-5] client [Client.java:62] Transaction 7 initiated: 75.32762812239355
+2024-09-18 15:51:03,644 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,644 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:03,645 DEBUG [Thread-1] Node1 [BankNode.java:121] Node1 handle CHANGE 75.32762812239355
+2024-09-18 15:51:03,645 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:03,645 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:03,645 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:03,645 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:03,645 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:03,645 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:03,645 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:03,645 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:03,645 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node1 with id 41
+2024-09-18 15:51:03,645 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node1 with id 41
+2024-09-18 15:51:03,645 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node1 with id 41
+2024-09-18 15:51:03,645 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,646 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,646 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node1 with id 41
+2024-09-18 15:51:03,646 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,646 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:03,646 DEBUG [Thread-20] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:03,646 DEBUG [Thread-20] Node1 [BankNode.java:175] PROMISE from Node3 with id 41
+2024-09-18 15:51:03,646 DEBUG [Thread-20] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:03,647 DEBUG [Thread-20] Node1 [BankNode.java:175] PROMISE from Node4 with id 41
+2024-09-18 15:51:03,647 DEBUG [Thread-20] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:03,647 DEBUG [Thread-20] Node1 [BankNode.java:175] PROMISE from Node2 with id 41
+2024-09-18 15:51:03,647 DEBUG [Thread-20] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:03,647 DEBUG [Thread-20] Node1 [BankNode.java:175] PROMISE from Node0 with id 41
+2024-09-18 15:51:04,148 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:04,149 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:04,149 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:04,149 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:04,149 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node1 with id 41
+2024-09-18 15:51:04,149 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node1 with id 41
+2024-09-18 15:51:04,149 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node1 with id 41
+2024-09-18 15:51:04,149 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node1 with id 41
+2024-09-18 15:51:04,149 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:04,149 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:04,151 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:04,152 DEBUG [Thread-21] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:04,153 DEBUG [Thread-21] Node1 [BankNode.java:175] ACCEPT from Node3 with id 41
+2024-09-18 15:51:04,154 DEBUG [Thread-21] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:04,155 DEBUG [Thread-21] Node1 [BankNode.java:175] ACCEPT from Node2 with id 41
+2024-09-18 15:51:04,156 DEBUG [Thread-21] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:04,157 DEBUG [Thread-21] Node1 [BankNode.java:175] ACCEPT from Node0 with id 41
+2024-09-18 15:51:04,157 DEBUG [Thread-21] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:04,158 DEBUG [Thread-21] Node1 [BankNode.java:175] ACCEPT from Node4 with id 41
+2024-09-18 15:51:04,657 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:04,658 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,658 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node1 with id 41
+2024-09-18 15:51:04,659 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:04,659 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,659 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node1 with id 41
+2024-09-18 15:51:04,660 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:04,661 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:04,661 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,661 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:04,662 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node1 with id 41
+2024-09-18 15:51:04,662 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,662 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:04,662 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node1 with id 41
+2024-09-18 15:51:04,663 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 7: SUCCESS
+2024-09-18 15:51:05,061 DEBUG [Thread-5] client [Client.java:62] Transaction 8 initiated: -41.82939220980968
+2024-09-18 15:51:05,061 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -41.82939220980968
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:05,062 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:05,062 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:05,062 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,062 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 48
+2024-09-18 15:51:05,062 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,062 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 48
+2024-09-18 15:51:05,062 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,063 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,063 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 48
+2024-09-18 15:51:05,063 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,062 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,063 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 48
+2024-09-18 15:51:05,063 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [BankNode.java:175] PROMISE from Node1 with id 48
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [BankNode.java:175] PROMISE from Node0 with id 48
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [BankNode.java:175] PROMISE from Node2 with id 48
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:05,063 DEBUG [Thread-22] Node3 [BankNode.java:175] PROMISE from Node4 with id 48
+2024-09-18 15:51:05,575 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:05,576 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:05,576 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:05,576 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,576 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:05,576 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,576 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 48
+2024-09-18 15:51:05,576 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,576 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:05,576 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 48
+2024-09-18 15:51:05,576 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 48
+2024-09-18 15:51:05,576 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 48
+2024-09-18 15:51:05,577 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,577 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,577 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,577 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:05,577 DEBUG [Thread-23] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:05,578 DEBUG [Thread-23] Node3 [BankNode.java:175] ACCEPT from Node0 with id 48
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [BankNode.java:175] ACCEPT from Node2 with id 48
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [BankNode.java:175] ACCEPT from Node1 with id 48
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:05,579 DEBUG [Thread-23] Node3 [BankNode.java:175] ACCEPT from Node4 with id 48
+2024-09-18 15:51:06,084 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:06,084 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:06,084 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,084 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:06,084 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,084 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:06,084 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 48
+2024-09-18 15:51:06,084 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,084 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 48
+2024-09-18 15:51:06,084 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,084 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 48
+2024-09-18 15:51:06,085 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,085 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,085 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 48
+2024-09-18 15:51:06,085 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 8: SUCCESS
+2024-09-18 15:51:06,455 DEBUG [Thread-5] client [Client.java:62] Transaction 9 initiated: 43.056826584596564
+2024-09-18 15:51:06,455 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,455 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:06,455 DEBUG [Thread-4] Node4 [BankNode.java:121] Node4 handle CHANGE 43.056826584596564
+2024-09-18 15:51:06,455 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:06,456 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:06,456 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:06,456 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:06,456 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node4 with id 54
+2024-09-18 15:51:06,456 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node4 with id 54
+2024-09-18 15:51:06,456 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node4 with id 54
+2024-09-18 15:51:06,456 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node4 with id 54
+2024-09-18 15:51:06,456 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,456 DEBUG [Thread-24] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:06,456 DEBUG [Thread-24] Node4 [BankNode.java:175] PROMISE from Node0 with id 54
+2024-09-18 15:51:06,456 DEBUG [Thread-24] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:06,457 DEBUG [Thread-24] Node4 [BankNode.java:175] PROMISE from Node1 with id 54
+2024-09-18 15:51:06,457 DEBUG [Thread-24] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:06,457 DEBUG [Thread-24] Node4 [BankNode.java:175] PROMISE from Node2 with id 54
+2024-09-18 15:51:06,457 DEBUG [Thread-24] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,457 DEBUG [Thread-24] Node4 [BankNode.java:175] PROMISE from Node3 with id 54
+2024-09-18 15:51:06,968 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:06,968 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:06,968 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:06,968 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:06,968 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,968 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,968 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,968 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node4 with id 54
+2024-09-18 15:51:06,968 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node4 with id 54
+2024-09-18 15:51:06,968 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:06,969 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node4 with id 54
+2024-09-18 15:51:06,969 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node4 with id 54
+2024-09-18 15:51:06,969 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,969 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,969 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,969 DEBUG [Thread-25] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:06,969 DEBUG [Thread-25] Node4 [BankNode.java:175] ACCEPT from Node3 with id 54
+2024-09-18 15:51:06,969 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:06,969 DEBUG [Thread-25] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:06,970 DEBUG [Thread-25] Node4 [BankNode.java:175] ACCEPT from Node0 with id 54
+2024-09-18 15:51:06,970 DEBUG [Thread-25] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:06,970 DEBUG [Thread-25] Node4 [BankNode.java:175] ACCEPT from Node1 with id 54
+2024-09-18 15:51:06,970 DEBUG [Thread-25] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:06,970 DEBUG [Thread-25] Node4 [BankNode.java:175] ACCEPT from Node2 with id 54
+2024-09-18 15:51:07,484 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:07,484 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,484 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:07,484 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node4 with id 54
+2024-09-18 15:51:07,484 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,485 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node4 with id 54
+2024-09-18 15:51:07,485 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:07,485 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,485 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:07,487 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,487 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node4 with id 54
+2024-09-18 15:51:07,488 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,488 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,488 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node4 with id 54
+2024-09-18 15:51:07,488 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 9: SUCCESS
+2024-09-18 15:51:07,824 DEBUG [Thread-5] client [Client.java:62] Transaction 10 initiated: -96.28283022714336
+2024-09-18 15:51:07,824 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -96.28283022714336
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:07,824 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:07,824 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:07,824 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:07,824 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:07,825 DEBUG [Thread-26] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:07,825 DEBUG [Thread-26] Node3 [BankNode.java:175] PROMISE from Node4 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-26] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:07,825 DEBUG [Thread-26] Node3 [BankNode.java:175] PROMISE from Node0 with id 58
+2024-09-18 15:51:07,825 DEBUG [Thread-26] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:07,826 DEBUG [Thread-26] Node3 [BankNode.java:175] PROMISE from Node2 with id 58
+2024-09-18 15:51:07,826 DEBUG [Thread-26] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:07,826 DEBUG [Thread-26] Node3 [BankNode.java:175] PROMISE from Node1 with id 58
+2024-09-18 15:51:08,336 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:08,337 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:08,337 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:08,337 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:08,337 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,337 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,337 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,338 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 58
+2024-09-18 15:51:08,337 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,339 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 58
+2024-09-18 15:51:08,339 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 58
+2024-09-18 15:51:08,337 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 58
+2024-09-18 15:51:08,340 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:08,340 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:08,340 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [BankNode.java:175] ACCEPT from Node1 with id 58
+2024-09-18 15:51:08,340 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [BankNode.java:175] ACCEPT from Node2 with id 58
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [BankNode.java:175] ACCEPT from Node4 with id 58
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:08,340 DEBUG [Thread-27] Node3 [BankNode.java:175] ACCEPT from Node0 with id 58
+2024-09-18 15:51:08,859 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:08,860 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,860 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 58
+2024-09-18 15:51:08,866 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:08,866 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,866 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:08,866 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 58
+2024-09-18 15:51:08,866 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,866 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:08,866 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:08,866 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 58
+2024-09-18 15:51:08,868 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,868 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:08,868 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 58
+2024-09-18 15:51:08,868 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 10: SUCCESS
+2024-09-18 15:51:09,036 DEBUG [Thread-5] client [Client.java:62] Transaction 11 initiated: -15.172751538949655
+2024-09-18 15:51:09,036 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,036 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:09,036 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -15.172751538949655
+2024-09-18 15:51:09,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:09,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:09,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:09,037 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:09,037 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,037 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,037 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,037 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 63
+2024-09-18 15:51:09,037 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,037 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,037 DEBUG [Thread-28] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:09,037 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,038 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [BankNode.java:175] PROMISE from Node2 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,038 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [BankNode.java:175] PROMISE from Node1 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [BankNode.java:175] PROMISE from Node4 with id 63
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:09,038 DEBUG [Thread-28] Node3 [BankNode.java:175] PROMISE from Node0 with id 63
+2024-09-18 15:51:09,549 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:09,549 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:09,549 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:09,549 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:09,549 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,550 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,550 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 63
+2024-09-18 15:51:09,550 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 63
+2024-09-18 15:51:09,551 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,551 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,551 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,551 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:09,551 DEBUG [Thread-29] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:09,551 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 63
+2024-09-18 15:51:09,551 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 63
+2024-09-18 15:51:09,552 DEBUG [Thread-29] Node3 [BankNode.java:175] ACCEPT from Node0 with id 63
+2024-09-18 15:51:09,553 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,554 DEBUG [Thread-29] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:09,554 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:09,555 DEBUG [Thread-29] Node3 [BankNode.java:175] ACCEPT from Node1 with id 63
+2024-09-18 15:51:09,555 DEBUG [Thread-29] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:09,558 DEBUG [Thread-29] Node3 [BankNode.java:175] ACCEPT from Node4 with id 63
+2024-09-18 15:51:09,559 DEBUG [Thread-29] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:09,560 DEBUG [Thread-29] Node3 [BankNode.java:175] ACCEPT from Node2 with id 63
+2024-09-18 15:51:10,070 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:10,071 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,071 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:10,071 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 63
+2024-09-18 15:51:10,071 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:10,071 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,071 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:10,072 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,072 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 63
+2024-09-18 15:51:10,073 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:10,073 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,073 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 63
+2024-09-18 15:51:10,074 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 63
+2024-09-18 15:51:10,075 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,078 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 11: SUCCESS
+2024-09-18 15:51:10,098 DEBUG [Thread-5] client [Client.java:62] Transaction 12 initiated: -60.08061056131668
+2024-09-18 15:51:10,099 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,099 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:10,100 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -60.08061056131668
+2024-09-18 15:51:10,100 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:10,101 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:10,101 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:10,102 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:10,102 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 68
+2024-09-18 15:51:10,102 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 68
+2024-09-18 15:51:10,102 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 68
+2024-09-18 15:51:10,102 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,102 DEBUG [Thread-30] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:10,102 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,103 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 68
+2024-09-18 15:51:10,103 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [BankNode.java:175] PROMISE from Node0 with id 68
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [BankNode.java:175] PROMISE from Node1 with id 68
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [BankNode.java:175] PROMISE from Node2 with id 68
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:10,103 DEBUG [Thread-30] Node3 [BankNode.java:175] PROMISE from Node4 with id 68
+2024-09-18 15:51:10,620 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:10,621 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:10,621 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:10,621 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:10,621 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,621 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 68
+2024-09-18 15:51:10,621 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,622 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 68
+2024-09-18 15:51:10,622 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,623 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 68
+2024-09-18 15:51:10,623 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,622 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:10,624 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,625 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,625 DEBUG [Thread-31] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:10,625 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 68
+2024-09-18 15:51:10,626 DEBUG [Thread-31] Node3 [BankNode.java:175] ACCEPT from Node1 with id 68
+2024-09-18 15:51:10,634 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:10,630 DEBUG [Thread-31] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:10,635 DEBUG [Thread-31] Node3 [BankNode.java:175] ACCEPT from Node4 with id 68
+2024-09-18 15:51:10,635 DEBUG [Thread-31] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:10,636 DEBUG [Thread-31] Node3 [BankNode.java:175] ACCEPT from Node0 with id 68
+2024-09-18 15:51:10,637 DEBUG [Thread-31] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:10,639 DEBUG [Thread-31] Node3 [BankNode.java:175] ACCEPT from Node2 with id 68
+2024-09-18 15:51:11,135 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,135 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:11,135 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,135 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,135 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:11,136 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 68
+2024-09-18 15:51:11,136 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:11,136 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,136 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:11,136 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,136 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,136 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 68
+2024-09-18 15:51:11,136 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 12: SUCCESS
+2024-09-18 15:51:11,136 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 68
+2024-09-18 15:51:11,137 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 68
+2024-09-18 15:51:11,567 DEBUG [Thread-5] client [Client.java:62] Transaction 13 initiated: -52.502008119389096
+2024-09-18 15:51:11,567 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [BankNode.java:121] Node0 handle CHANGE -52.502008119389096
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:11,568 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:11,568 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:11,568 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:11,568 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:11,569 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:11,569 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node0 with id 70
+2024-09-18 15:51:11,569 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,569 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node0 with id 70
+2024-09-18 15:51:11,569 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,569 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node0 with id 70
+2024-09-18 15:51:11,569 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,569 DEBUG [Thread-32] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:11,569 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node0 with id 70
+2024-09-18 15:51:11,570 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [BankNode.java:175] PROMISE from Node1 with id 70
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [BankNode.java:175] PROMISE from Node3 with id 70
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [BankNode.java:175] PROMISE from Node4 with id 70
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:11,570 DEBUG [Thread-32] Node0 [BankNode.java:175] PROMISE from Node2 with id 70
+2024-09-18 15:51:12,079 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,079 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:12,079 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:12,079 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:12,079 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,080 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,080 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node0 with id 70
+2024-09-18 15:51:12,080 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node0 with id 70
+2024-09-18 15:51:12,080 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,080 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node0 with id 70
+2024-09-18 15:51:12,080 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,081 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node0 with id 70
+2024-09-18 15:51:12,081 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:12,081 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:12,081 DEBUG [Thread-33] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:12,082 DEBUG [Thread-33] Node0 [BankNode.java:175] ACCEPT from Node4 with id 70
+2024-09-18 15:51:12,082 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:12,081 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:12,082 DEBUG [Thread-33] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:12,083 DEBUG [Thread-33] Node0 [BankNode.java:175] ACCEPT from Node1 with id 70
+2024-09-18 15:51:12,083 DEBUG [Thread-33] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:12,083 DEBUG [Thread-33] Node0 [BankNode.java:175] ACCEPT from Node3 with id 70
+2024-09-18 15:51:12,083 DEBUG [Thread-33] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:12,083 DEBUG [Thread-33] Node0 [BankNode.java:175] ACCEPT from Node2 with id 70
+2024-09-18 15:51:12,595 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,595 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:12,596 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:12,595 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,596 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,596 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:12,596 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,596 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:12,596 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node0 with id 70
+2024-09-18 15:51:12,596 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node0 with id 70
+2024-09-18 15:51:12,596 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node0 with id 70
+2024-09-18 15:51:12,597 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,597 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,597 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node0 with id 70
+2024-09-18 15:51:12,598 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 13: SUCCESS
+2024-09-18 15:51:12,782 DEBUG [Thread-5] client [Client.java:62] Transaction 14 initiated: -1.552643555411933
+2024-09-18 15:51:12,782 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,782 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:12,783 DEBUG [Thread-1] Node1 [BankNode.java:121] Node1 handle CHANGE -1.552643555411933
+2024-09-18 15:51:12,783 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:12,783 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:12,783 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:12,783 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:12,783 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:12,783 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:12,783 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:12,783 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:12,783 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node1 with id 76
+2024-09-18 15:51:12,783 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node1 with id 76
+2024-09-18 15:51:12,784 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node1 with id 76
+2024-09-18 15:51:12,784 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node1 with id 76
+2024-09-18 15:51:12,784 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,784 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,784 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,784 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:12,784 DEBUG [Thread-34] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:12,784 DEBUG [Thread-34] Node1 [BankNode.java:175] PROMISE from Node4 with id 76
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [BankNode.java:175] PROMISE from Node2 with id 76
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [BankNode.java:175] PROMISE from Node0 with id 76
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:12,785 DEBUG [Thread-34] Node1 [BankNode.java:175] PROMISE from Node3 with id 76
+2024-09-18 15:51:13,295 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:13,295 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:13,295 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:13,295 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:13,295 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,295 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,295 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,295 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node1 with id 76
+2024-09-18 15:51:13,295 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node1 with id 76
+2024-09-18 15:51:13,295 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,295 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node1 with id 76
+2024-09-18 15:51:13,295 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node1 with id 76
+2024-09-18 15:51:13,296 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:13,296 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:13,296 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:13,296 DEBUG [Thread-35] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:13,296 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:13,298 DEBUG [Thread-35] Node1 [BankNode.java:175] ACCEPT from Node0 with id 76
+2024-09-18 15:51:13,298 DEBUG [Thread-35] Node1 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:13,298 DEBUG [Thread-35] Node1 [BankNode.java:175] ACCEPT from Node4 with id 76
+2024-09-18 15:51:13,299 DEBUG [Thread-35] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:13,299 DEBUG [Thread-35] Node1 [BankNode.java:175] ACCEPT from Node2 with id 76
+2024-09-18 15:51:13,299 DEBUG [Thread-35] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:13,300 DEBUG [Thread-35] Node1 [BankNode.java:175] ACCEPT from Node3 with id 76
+2024-09-18 15:51:13,814 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:13,814 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:13,814 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:13,814 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:13,814 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,814 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,814 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,814 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:13,814 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,816 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node1 with id 76
+2024-09-18 15:51:13,816 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node1 with id 76
+2024-09-18 15:51:13,816 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node1 with id 76
+2024-09-18 15:51:13,816 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:13,817 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node1 with id 76
+2024-09-18 15:51:13,819 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 14: SUCCESS
+2024-09-18 15:51:14,269 DEBUG [Thread-5] client [Client.java:62] Transaction 15 initiated: -47.0907998344757
+2024-09-18 15:51:14,269 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [BankNode.java:121] Node2 handle CHANGE -47.0907998344757
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:14,269 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:14,269 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node2 with id 82
+2024-09-18 15:51:14,269 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node2 with id 82
+2024-09-18 15:51:14,269 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node2 with id 82
+2024-09-18 15:51:14,269 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,269 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node2 with id 82
+2024-09-18 15:51:14,270 DEBUG [Thread-36] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:14,270 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [BankNode.java:175] PROMISE from Node3 with id 82
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [BankNode.java:175] PROMISE from Node4 with id 82
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [BankNode.java:175] PROMISE from Node0 with id 82
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:14,271 DEBUG [Thread-36] Node2 [BankNode.java:175] PROMISE from Node1 with id 82
+2024-09-18 15:51:14,775 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:14,775 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:14,775 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:14,775 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:14,776 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,776 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,776 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,776 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node2 with id 82
+2024-09-18 15:51:14,776 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node2 with id 82
+2024-09-18 15:51:14,776 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node2 with id 82
+2024-09-18 15:51:14,776 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:14,777 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,777 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,778 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node2 with id 82
+2024-09-18 15:51:14,778 DEBUG [Thread-37] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:14,778 DEBUG [Thread-37] Node2 [BankNode.java:175] ACCEPT from Node0 with id 82
+2024-09-18 15:51:14,778 DEBUG [Thread-37] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:14,778 DEBUG [Thread-37] Node2 [BankNode.java:175] ACCEPT from Node1 with id 82
+2024-09-18 15:51:14,778 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,779 DEBUG [Thread-37] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:14,779 DEBUG [Thread-37] Node2 [BankNode.java:175] ACCEPT from Node3 with id 82
+2024-09-18 15:51:14,779 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:14,780 DEBUG [Thread-37] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:14,780 DEBUG [Thread-37] Node2 [BankNode.java:175] ACCEPT from Node4 with id 82
+2024-09-18 15:51:15,291 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:15,291 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:15,291 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,291 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:15,291 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:15,291 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,291 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,291 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node2 with id 82
+2024-09-18 15:51:15,291 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,291 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,291 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,291 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node2 with id 82
+2024-09-18 15:51:15,292 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node2 with id 82
+2024-09-18 15:51:15,292 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node2 with id 82
+2024-09-18 15:51:15,292 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 15: SUCCESS
+2024-09-18 15:51:15,518 DEBUG [Thread-5] client [Client.java:62] Transaction 16 initiated: -7.485280461866822
+2024-09-18 15:51:15,518 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,518 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:15,518 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -7.485280461866822
+2024-09-18 15:51:15,518 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:15,518 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:15,518 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:15,519 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:15,519 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 88
+2024-09-18 15:51:15,519 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 88
+2024-09-18 15:51:15,519 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 88
+2024-09-18 15:51:15,519 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 88
+2024-09-18 15:51:15,519 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,519 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [BankNode.java:175] PROMISE from Node0 with id 88
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [BankNode.java:175] PROMISE from Node1 with id 88
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:15,520 DEBUG [Thread-38] Node3 [BankNode.java:175] PROMISE from Node4 with id 88
+2024-09-18 15:51:15,525 DEBUG [Thread-38] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:15,525 DEBUG [Thread-38] Node3 [BankNode.java:175] PROMISE from Node2 with id 88
+2024-09-18 15:51:16,021 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:16,021 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:16,021 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,021 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:16,021 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,022 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,022 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 88
+2024-09-18 15:51:16,022 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,022 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 88
+2024-09-18 15:51:16,022 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 88
+2024-09-18 15:51:16,023 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,024 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:16,024 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 88
+2024-09-18 15:51:16,025 DEBUG [Thread-39] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:16,025 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:16,025 DEBUG [Thread-39] Node3 [BankNode.java:175] ACCEPT from Node0 with id 88
+2024-09-18 15:51:16,026 DEBUG [Thread-39] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:16,026 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:16,026 DEBUG [Thread-39] Node3 [BankNode.java:175] ACCEPT from Node2 with id 88
+2024-09-18 15:51:16,026 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:16,027 DEBUG [Thread-39] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:16,028 DEBUG [Thread-39] Node3 [BankNode.java:175] ACCEPT from Node4 with id 88
+2024-09-18 15:51:16,028 DEBUG [Thread-39] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:16,029 DEBUG [Thread-39] Node3 [BankNode.java:175] ACCEPT from Node1 with id 88
+2024-09-18 15:51:16,541 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:16,542 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,542 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:16,542 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 88
+2024-09-18 15:51:16,542 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,542 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 88
+2024-09-18 15:51:16,542 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,543 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:16,543 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:16,543 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,543 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,543 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,543 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 88
+2024-09-18 15:51:16,544 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 88
+2024-09-18 15:51:16,544 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 16: SUCCESS
+2024-09-18 15:51:16,860 DEBUG [Thread-5] client [Client.java:62] Transaction 17 initiated: 15.472422156877712
+2024-09-18 15:51:16,861 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [BankNode.java:121] Node2 handle CHANGE 15.472422156877712
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:16,861 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:16,861 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:16,861 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:16,862 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node2 with id 92
+2024-09-18 15:51:16,862 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node2 with id 92
+2024-09-18 15:51:16,862 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,862 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:16,862 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,862 DEBUG [Thread-40] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:16,863 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node2 with id 92
+2024-09-18 15:51:16,863 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,862 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:16,863 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node2 with id 92
+2024-09-18 15:51:16,863 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:16,863 DEBUG [Thread-40] Node2 [BankNode.java:175] PROMISE from Node0 with id 92
+2024-09-18 15:51:16,863 DEBUG [Thread-40] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:16,863 DEBUG [Thread-40] Node2 [BankNode.java:175] PROMISE from Node4 with id 92
+2024-09-18 15:51:16,863 DEBUG [Thread-40] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:16,864 DEBUG [Thread-40] Node2 [BankNode.java:175] PROMISE from Node1 with id 92
+2024-09-18 15:51:16,864 DEBUG [Thread-40] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:16,864 DEBUG [Thread-40] Node2 [BankNode.java:175] PROMISE from Node3 with id 92
+2024-09-18 15:51:17,364 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:17,364 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:17,364 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:17,364 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:17,364 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,364 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,365 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node2 with id 92
+2024-09-18 15:51:17,365 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,365 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node2 with id 92
+2024-09-18 15:51:17,365 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,365 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node2 with id 92
+2024-09-18 15:51:17,365 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:17,365 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:17,366 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node2 with id 92
+2024-09-18 15:51:17,366 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:17,366 DEBUG [Thread-41] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [BankNode.java:175] ACCEPT from Node0 with id 92
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [BankNode.java:175] ACCEPT from Node1 with id 92
+2024-09-18 15:51:17,367 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [BankNode.java:175] ACCEPT from Node3 with id 92
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:17,367 DEBUG [Thread-41] Node2 [BankNode.java:175] ACCEPT from Node4 with id 92
+2024-09-18 15:51:17,885 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:17,886 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,886 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node2 with id 92
+2024-09-18 15:51:17,887 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:17,888 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:17,888 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:17,888 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:17,888 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,888 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node2 with id 92
+2024-09-18 15:51:17,889 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,889 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node2 with id 92
+2024-09-18 15:51:17,889 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,890 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node2 with id 92
+2024-09-18 15:51:17,890 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:17,890 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 17: SUCCESS
+2024-09-18 15:51:18,249 DEBUG [Thread-5] client [Client.java:62] Transaction 18 initiated: 99.45211174328108
+2024-09-18 15:51:18,249 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [BankNode.java:121] Node0 handle CHANGE 99.45211174328108
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:18,249 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:18,249 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node0 with id 95
+2024-09-18 15:51:18,249 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node0 with id 95
+2024-09-18 15:51:18,249 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node0 with id 95
+2024-09-18 15:51:18,250 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,249 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,250 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node0 with id 95
+2024-09-18 15:51:18,250 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [BankNode.java:175] PROMISE from Node3 with id 95
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [BankNode.java:175] PROMISE from Node1 with id 95
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [BankNode.java:175] PROMISE from Node2 with id 95
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:18,250 DEBUG [Thread-42] Node0 [BankNode.java:175] PROMISE from Node4 with id 95
+2024-09-18 15:51:18,753 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:18,753 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:18,753 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:18,754 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:18,754 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,754 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,754 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node0 with id 95
+2024-09-18 15:51:18,754 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node0 with id 95
+2024-09-18 15:51:18,754 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,754 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node0 with id 95
+2024-09-18 15:51:18,754 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:18,755 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node0 with id 95
+2024-09-18 15:51:18,755 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,755 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,755 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,755 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [BankNode.java:175] ACCEPT from Node1 with id 95
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [BankNode.java:175] ACCEPT from Node2 with id 95
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [BankNode.java:175] ACCEPT from Node3 with id 95
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:18,756 DEBUG [Thread-43] Node0 [BankNode.java:175] ACCEPT from Node4 with id 95
+2024-09-18 15:51:19,271 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:19,271 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:19,271 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:19,271 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:19,271 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:19,271 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,271 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,271 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,271 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node0 with id 95
+2024-09-18 15:51:19,271 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node0 with id 95
+2024-09-18 15:51:19,271 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,271 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,271 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node0 with id 95
+2024-09-18 15:51:19,271 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 18: SUCCESS
+2024-09-18 15:51:19,271 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node0 with id 95
+2024-09-18 15:51:19,309 DEBUG [Thread-5] client [Client.java:62] Transaction 19 initiated: 93.00624630401768
+2024-09-18 15:51:19,309 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [BankNode.java:121] Node0 handle CHANGE 93.00624630401768
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:19,309 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:19,309 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,309 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,309 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,309 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,310 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node0 with id 100
+2024-09-18 15:51:19,310 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node0 with id 100
+2024-09-18 15:51:19,310 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node0 with id 100
+2024-09-18 15:51:19,311 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node0 with id 100
+2024-09-18 15:51:19,311 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,311 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,312 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,312 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,312 DEBUG [Thread-44] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [BankNode.java:175] PROMISE from Node2 with id 100
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [BankNode.java:175] PROMISE from Node1 with id 100
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [BankNode.java:175] PROMISE from Node4 with id 100
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:19,313 DEBUG [Thread-44] Node0 [BankNode.java:175] PROMISE from Node3 with id 100
+2024-09-18 15:51:19,817 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:19,817 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:19,817 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:19,817 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:19,817 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,817 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,817 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node0 with id 100
+2024-09-18 15:51:19,817 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,817 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node0 with id 100
+2024-09-18 15:51:19,817 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:19,817 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node0 with id 100
+2024-09-18 15:51:19,818 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node0 with id 100
+2024-09-18 15:51:19,818 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,818 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,818 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,818 DEBUG [Thread-45] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:19,818 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:19,818 DEBUG [Thread-45] Node0 [BankNode.java:175] ACCEPT from Node1 with id 100
+2024-09-18 15:51:19,819 DEBUG [Thread-45] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:19,821 DEBUG [Thread-45] Node0 [BankNode.java:175] ACCEPT from Node2 with id 100
+2024-09-18 15:51:19,821 DEBUG [Thread-45] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:19,822 DEBUG [Thread-45] Node0 [BankNode.java:175] ACCEPT from Node3 with id 100
+2024-09-18 15:51:19,822 DEBUG [Thread-45] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:19,822 DEBUG [Thread-45] Node0 [BankNode.java:175] ACCEPT from Node4 with id 100
+2024-09-18 15:51:20,334 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:20,334 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:20,334 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,334 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:20,334 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:20,334 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,334 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,334 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node0 with id 100
+2024-09-18 15:51:20,334 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node0 with id 100
+2024-09-18 15:51:20,334 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,334 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,334 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node0 with id 100
+2024-09-18 15:51:20,334 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node0 with id 100
+2024-09-18 15:51:20,334 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,334 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 19: SUCCESS
+2024-09-18 15:51:20,391 DEBUG [Thread-5] client [Client.java:62] Transaction 20 initiated: -16.40318154535869
+2024-09-18 15:51:20,391 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [BankNode.java:121] Node3 handle CHANGE -16.40318154535869
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:20,391 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:20,391 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,391 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,391 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,391 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,392 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node3 with id 108
+2024-09-18 15:51:20,392 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node3 with id 108
+2024-09-18 15:51:20,392 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node3 with id 108
+2024-09-18 15:51:20,393 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node3 with id 108
+2024-09-18 15:51:20,393 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,393 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,393 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,393 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,394 DEBUG [Thread-46] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:20,394 DEBUG [Thread-46] Node3 [BankNode.java:175] PROMISE from Node1 with id 108
+2024-09-18 15:51:20,394 DEBUG [Thread-46] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:20,395 DEBUG [Thread-46] Node3 [BankNode.java:175] PROMISE from Node2 with id 108
+2024-09-18 15:51:20,395 DEBUG [Thread-46] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,395 DEBUG [Thread-46] Node3 [BankNode.java:175] PROMISE from Node0 with id 108
+2024-09-18 15:51:20,395 DEBUG [Thread-46] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:20,395 DEBUG [Thread-46] Node3 [BankNode.java:175] PROMISE from Node4 with id 108
+2024-09-18 15:51:20,907 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:20,907 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:20,907 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:20,907 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:20,907 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,908 DEBUG [Thread-0] Node0 [BankNode.java:175] PROPOSE from Node3 with id 108
+2024-09-18 15:51:20,908 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,908 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node3 with id 108
+2024-09-18 15:51:20,909 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,911 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,911 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node3 with id 108
+2024-09-18 15:51:20,912 DEBUG [Thread-47] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:20,912 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,912 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:20,913 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,914 DEBUG [Thread-47] Node3 [BankNode.java:175] ACCEPT from Node0 with id 108
+2024-09-18 15:51:20,914 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node3 with id 108
+2024-09-18 15:51:20,914 DEBUG [Thread-47] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:20,915 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:20,915 DEBUG [Thread-47] Node3 [BankNode.java:175] ACCEPT from Node2 with id 108
+2024-09-18 15:51:20,919 DEBUG [Thread-47] Node3 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:20,919 DEBUG [Thread-47] Node3 [BankNode.java:175] ACCEPT from Node1 with id 108
+2024-09-18 15:51:20,920 DEBUG [Thread-47] Node3 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:20,920 DEBUG [Thread-47] Node3 [BankNode.java:175] ACCEPT from Node4 with id 108
+2024-09-18 15:51:21,425 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,425 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,426 DEBUG [Thread-0] Node0 [BankNode.java:175] LEARN from Node3 with id 108
+2024-09-18 15:51:21,426 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:21,426 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:21,426 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:21,426 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:21,426 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,427 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node3 with id 108
+2024-09-18 15:51:21,427 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,427 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node3 with id 108
+2024-09-18 15:51:21,428 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,428 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,429 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node3 with id 108
+2024-09-18 15:51:21,429 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 20: SUCCESS
+2024-09-18 15:51:21,441 DEBUG [Thread-5] client [Client.java:62] Transaction 21 initiated: 62.937583078207865
+2024-09-18 15:51:21,441 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [BankNode.java:121] Node0 handle CHANGE 62.937583078207865
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:21,441 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:21,441 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node0 with id 110
+2024-09-18 15:51:21,441 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node0 with id 110
+2024-09-18 15:51:21,441 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node0 with id 110
+2024-09-18 15:51:21,441 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,441 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,442 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node0 with id 110
+2024-09-18 15:51:21,442 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [BankNode.java:175] PROMISE from Node3 with id 110
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [BankNode.java:175] PROMISE from Node1 with id 110
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [BankNode.java:175] PROMISE from Node2 with id 110
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:21,442 DEBUG [Thread-48] Node0 [BankNode.java:175] PROMISE from Node4 with id 110
+2024-09-18 15:51:21,948 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:21,948 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:21,948 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:21,948 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:21,948 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,948 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,948 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,948 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node0 with id 110
+2024-09-18 15:51:21,948 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node0 with id 110
+2024-09-18 15:51:21,948 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:21,948 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node0 with id 110
+2024-09-18 15:51:21,948 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node0 with id 110
+2024-09-18 15:51:21,949 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,949 DEBUG [Thread-49] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:21,949 DEBUG [Thread-49] Node0 [BankNode.java:175] ACCEPT from Node2 with id 110
+2024-09-18 15:51:21,949 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,949 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,950 DEBUG [Thread-49] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:21,950 DEBUG [Thread-49] Node0 [BankNode.java:175] ACCEPT from Node3 with id 110
+2024-09-18 15:51:21,950 DEBUG [Thread-49] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:21,950 DEBUG [Thread-49] Node0 [BankNode.java:175] ACCEPT from Node1 with id 110
+2024-09-18 15:51:21,951 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:21,951 DEBUG [Thread-49] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:21,951 DEBUG [Thread-49] Node0 [BankNode.java:175] ACCEPT from Node4 with id 110
+2024-09-18 15:51:22,467 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:22,467 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:22,467 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:22,467 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,467 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,467 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:22,467 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,468 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node0 with id 110
+2024-09-18 15:51:22,468 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node0 with id 110
+2024-09-18 15:51:22,468 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node0 with id 110
+2024-09-18 15:51:22,468 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:22,468 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,470 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node0 with id 110
+2024-09-18 15:51:22,470 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,471 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 21: SUCCESS
+2024-09-18 15:51:22,695 DEBUG [Thread-5] client [Client.java:62] Transaction 22 initiated: 92.73224338970192
+2024-09-18 15:51:22,695 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [BankNode.java:121] Node0 handle CHANGE 92.73224338970192
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:22,695 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:22,695 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,695 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-2] Node2 [BankNode.java:175] PREPARE from Node0 with id 115
+2024-09-18 15:51:22,696 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node0 with id 115
+2024-09-18 15:51:22,696 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node0 with id 115
+2024-09-18 15:51:22,696 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node0 with id 115
+2024-09-18 15:51:22,696 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:22,696 DEBUG [Thread-50] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:22,696 DEBUG [Thread-50] Node0 [BankNode.java:175] PROMISE from Node2 with id 115
+2024-09-18 15:51:22,696 DEBUG [Thread-50] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:22,696 DEBUG [Thread-50] Node0 [BankNode.java:175] PROMISE from Node1 with id 115
+2024-09-18 15:51:22,697 DEBUG [Thread-50] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:22,697 DEBUG [Thread-50] Node0 [BankNode.java:175] PROMISE from Node4 with id 115
+2024-09-18 15:51:22,697 DEBUG [Thread-50] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:22,697 DEBUG [Thread-50] Node0 [BankNode.java:175] PROMISE from Node3 with id 115
+2024-09-18 15:51:23,215 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:23,215 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:23,215 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:23,215 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:23,215 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,215 DEBUG [Thread-1] Node1 [BankNode.java:175] PROPOSE from Node0 with id 115
+2024-09-18 15:51:23,215 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,215 DEBUG [Thread-2] Node2 [BankNode.java:175] PROPOSE from Node0 with id 115
+2024-09-18 15:51:23,215 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:23,215 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:23,215 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,215 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,216 DEBUG [Thread-4] Node4 [BankNode.java:175] PROPOSE from Node0 with id 115
+2024-09-18 15:51:23,216 DEBUG [Thread-3] Node3 [BankNode.java:175] PROPOSE from Node0 with id 115
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [BankNode.java:175] ACCEPT from Node1 with id 115
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [BankNode.java:175] ACCEPT from Node2 with id 115
+2024-09-18 15:51:23,216 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:23,216 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [BankNode.java:175] ACCEPT from Node4 with id 115
+2024-09-18 15:51:23,216 DEBUG [Thread-51] Node0 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:23,217 DEBUG [Thread-51] Node0 [BankNode.java:175] ACCEPT from Node3 with id 115
+2024-09-18 15:51:23,726 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:23,726 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:23,726 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:23,726 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,726 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:23,727 DEBUG [Thread-1] Node1 [BankNode.java:175] LEARN from Node0 with id 115
+2024-09-18 15:51:23,726 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,727 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,727 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to client
+2024-09-18 15:51:23,727 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,727 DEBUG [Thread-2] Node2 [BankNode.java:175] LEARN from Node0 with id 115
+2024-09-18 15:51:23,728 DEBUG [Thread-3] Node3 [BankNode.java:175] LEARN from Node0 with id 115
+2024-09-18 15:51:23,728 DEBUG [Thread-5] client [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:23,728 DEBUG [Thread-4] Node4 [BankNode.java:175] LEARN from Node0 with id 115
+2024-09-18 15:51:23,729 DEBUG [Thread-5] client [Client.java:72] Status of the Transaction 22: SUCCESS
+2024-09-18 15:51:24,223 DEBUG [Thread-5] client [Client.java:62] Transaction 23 initiated: 31.02800802381168
+2024-09-18 15:51:24,223 DEBUG [Thread-5] client [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:24,223 DEBUG [Thread-2] Node2 [NetworkConnection.java:42] Received message from client
+2024-09-18 15:51:24,223 DEBUG [Thread-2] Node2 [BankNode.java:121] Node2 handle CHANGE 31.02800802381168
+2024-09-18 15:51:24,224 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node0
+2024-09-18 15:51:24,224 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node1
+2024-09-18 15:51:24,224 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node3
+2024-09-18 15:51:24,224 DEBUG [Thread-2] Node2 [NetworkConnection.java:47] Sending message to Node4
+2024-09-18 15:51:24,224 DEBUG [Thread-0] Node0 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:24,224 DEBUG [Thread-4] Node4 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-1] Node1 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-0] Node0 [BankNode.java:175] PREPARE from Node2 with id 122
+2024-09-18 15:51:24,225 DEBUG [Thread-3] Node3 [NetworkConnection.java:42] Received message from Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-1] Node1 [BankNode.java:175] PREPARE from Node2 with id 122
+2024-09-18 15:51:24,225 DEBUG [Thread-0] Node0 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-1] Node1 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-4] Node4 [BankNode.java:175] PREPARE from Node2 with id 122
+2024-09-18 15:51:24,225 DEBUG [Thread-3] Node3 [BankNode.java:175] PREPARE from Node2 with id 122
+2024-09-18 15:51:24,225 DEBUG [Thread-4] Node4 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-3] Node3 [NetworkConnection.java:47] Sending message to Node2
+2024-09-18 15:51:24,225 DEBUG [Thread-52] Node2 [NetworkConnection.java:42] Received message from Node0
+2024-09-18 15:51:24,225 DEBUG [Thread-52] Node2 [BankNode.java:175] PROMISE from Node0 with id 122
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [NetworkConnection.java:42] Received message from Node1
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [BankNode.java:175] PROMISE from Node1 with id 122
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [NetworkConnection.java:42] Received message from Node4
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [BankNode.java:175] PROMISE from Node4 with id 122
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [NetworkConnection.java:42] Received message from Node3
+2024-09-18 15:51:24,226 DEBUG [Thread-52] Node2 [BankNode.java:175] PROMISE from Node3 with id 122
+2024-09-18 15:51:24,289 INFO [main] o.o.sim4da.sim4da [Simulator.java:50] sim4da V2.0 - Simulation ended.

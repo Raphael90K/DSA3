@@ -1,0 +1,126 @@
+{
+  "lastTransaction" : {
+    "txId" : 22,
+    "consensusID" : 115,
+    "change" : 92.73224338970192,
+    "value" : 173.9861228889065
+  },
+  "owner" : "client",
+  "balance" : 173.9861228889065,
+  "transactions" : [ {
+    "txId" : 0,
+    "consensusID" : 9,
+    "change" : 37.144643116729014,
+    "value" : 37.144643116729014
+  }, {
+    "txId" : 1,
+    "consensusID" : 11,
+    "change" : -24.343036532769773,
+    "value" : 12.801606583959241
+  }, {
+    "txId" : 2,
+    "consensusID" : 16,
+    "change" : -93.54977473700916,
+    "value" : -80.74816815304992
+  }, {
+    "txId" : 3,
+    "consensusID" : 23,
+    "change" : 62.52514457532658,
+    "value" : -18.22302357772334
+  }, {
+    "txId" : 4,
+    "consensusID" : 28,
+    "change" : 79.46202730991905,
+    "value" : 61.23900373219571
+  }, {
+    "txId" : 5,
+    "consensusID" : 31,
+    "change" : 17.085209459653868,
+    "value" : 78.32421319184958
+  }, {
+    "txId" : 6,
+    "consensusID" : 38,
+    "change" : -47.92365362829785,
+    "value" : 30.40055956355173
+  }, {
+    "txId" : 7,
+    "consensusID" : 41,
+    "change" : 75.32762812239355,
+    "value" : 105.72818768594527
+  }, {
+    "txId" : 8,
+    "consensusID" : 48,
+    "change" : -41.82939220980968,
+    "value" : 63.89879547613559
+  }, {
+    "txId" : 9,
+    "consensusID" : 54,
+    "change" : 43.056826584596564,
+    "value" : 106.95562206073215
+  }, {
+    "txId" : 10,
+    "consensusID" : 58,
+    "change" : -96.28283022714336,
+    "value" : 10.67279183358879
+  }, {
+    "txId" : 11,
+    "consensusID" : 63,
+    "change" : -15.172751538949655,
+    "value" : -4.499959705360865
+  }, {
+    "txId" : 12,
+    "consensusID" : 68,
+    "change" : -60.08061056131668,
+    "value" : -64.58057026667754
+  }, {
+    "txId" : 13,
+    "consensusID" : 70,
+    "change" : -52.502008119389096,
+    "value" : -117.08257838606664
+  }, {
+    "txId" : 14,
+    "consensusID" : 76,
+    "change" : -1.552643555411933,
+    "value" : -118.63522194147858
+  }, {
+    "txId" : 15,
+    "consensusID" : 82,
+    "change" : -47.0907998344757,
+    "value" : -165.72602177595428
+  }, {
+    "txId" : 16,
+    "consensusID" : 88,
+    "change" : -7.485280461866822,
+    "value" : -173.2113022378211
+  }, {
+    "txId" : 17,
+    "consensusID" : 92,
+    "change" : 15.472422156877712,
+    "value" : -157.73888008094337
+  }, {
+    "txId" : 18,
+    "consensusID" : 95,
+    "change" : 99.45211174328108,
+    "value" : -58.286768337662295
+  }, {
+    "txId" : 19,
+    "consensusID" : 100,
+    "change" : 93.00624630401768,
+    "value" : 34.719477966355385
+  }, {
+    "txId" : 20,
+    "consensusID" : 108,
+    "change" : -16.40318154535869,
+    "value" : 18.316296420996693
+  }, {
+    "txId" : 21,
+    "consensusID" : 110,
+    "change" : 62.937583078207865,
+    "value" : 81.25387949920456
+  }, {
+    "txId" : 22,
+    "consensusID" : 115,
+    "change" : 92.73224338970192,
+    "value" : 173.9861228889065
+  } ]
+}

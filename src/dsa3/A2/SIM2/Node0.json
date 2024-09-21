@@ -1,0 +1,81 @@
+{
+  "lastTransaction" : {
+    "txId" : 13,
+    "consensusID" : 116,
+    "change" : 81.60238102509302,
+    "value" : 361.543006992261
+  },
+  "owner" : "client",
+  "balance" : 361.543006992261,
+  "transactions" : [ {
+    "txId" : 0,
+    "consensusID" : 6,
+    "change" : -33.28857268129562,
+    "value" : -33.28857268129562
+  }, {
+    "txId" : 1,
+    "consensusID" : 16,
+    "change" : 90.28420874524915,
+    "value" : 56.995636063953526
+  }, {
+    "txId" : 2,
+    "consensusID" : 31,
+    "change" : 60.524304480108555,
+    "value" : 117.51994054406208
+  }, {
+    "txId" : 3,
+    "consensusID" : 36,
+    "change" : 35.239512159127884,
+    "value" : 152.75945270318996
+  }, {
+    "txId" : 4,
+    "consensusID" : 47,
+    "change" : 37.784832167854574,
+    "value" : 190.54428487104454
+  }, {
+    "txId" : 5,
+    "consensusID" : 50,
+    "change" : 45.69694306260476,
+    "value" : 236.2412279336493
+  }, {
+    "txId" : 6,
+    "consensusID" : 62,
+    "change" : -5.35282001544121,
+    "value" : 230.8884079182081
+  }, {
+    "txId" : 7,
+    "consensusID" : 77,
+    "change" : -64.07851084121954,
+    "value" : 166.80989707698853
+  }, {
+    "txId" : 8,
+    "consensusID" : 81,
+    "change" : 86.01203983961676,
+    "value" : 252.8219369166053
+  }, {
+    "txId" : 9,
+    "consensusID" : 85,
+    "change" : 62.804960527285886,
+    "value" : 315.62689744389115
+  }, {
+    "txId" : 10,
+    "consensusID" : 97,
+    "change" : 14.784728657117512,
+    "value" : 330.41162610100866
+  }, {
+    "txId" : 11,
+    "consensusID" : 102,
+    "change" : -1.564140121152377,
+    "value" : 328.8474859798563
+  }, {
+    "txId" : 12,
+    "consensusID" : 107,
+    "change" : -48.90686001268827,
+    "value" : 279.940625967168
+  }, {
+    "txId" : 13,
+    "consensusID" : 116,
+    "change" : 81.60238102509302,
+    "value" : 361.543006992261
+  } ]
+}

@@ -3,6 +3,11 @@ package dsa3.A2.Bank;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * Transaktionen die die Kontoänderungen eines Bankobjekts repräsentieren. Werden in einem Bankaccount als Liste gespeichert.
+ *
+ *
+ */
 public class Transaction {
     private int txId;
     private int consensusID;
@@ -61,6 +66,12 @@ public class Transaction {
         }
     }
 
+    /**
+     * Wandelt einen String in ein Transaction Object um.
+     *
+     * @param string
+     * @return
+     */
     public static Transaction fromString(String string) {
         ObjectMapper om = new ObjectMapper();
         try {
