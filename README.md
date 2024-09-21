@@ -1,2 +1,2 @@
-# Verteilte Systeme Übung 2
-Simulation verteilter Systeme und Erkennung der Terminierung.
+# Verteilte Systeme Übung 3
+Simulation verteilter Systeme und Konsensfindung mit dem Paxos Algorithmus.
