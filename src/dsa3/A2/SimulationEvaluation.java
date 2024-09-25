@@ -71,7 +71,7 @@ public class SimulationEvaluation {
 
         strings= Arrays.asList(s0, s1, s2, s3, s4);
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i < 5; i++) {
             for (int j = i + 1; j < 5; j++) {
                 System.out.println("Node%d equals Node%s: %b".formatted(i, j, strings.get(i).equals(strings.get(j))));
             }
